@@ -25,87 +25,87 @@
             <img src="human.jpg" class = "ms-5" width="250"/>
 
             <div style = "position: absolute; top: 300px; right: 250px;">
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="A1" class = "btn btn-outline-secondary" style="color: black">
                     A-1
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="A2" class = "btn btn-outline-secondary" style="color: black">
                     A-2
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="A3" class = "btn btn-outline-secondary" style="color: black">
                     A-3
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="A4" class = "btn btn-outline-secondary" style="color: black">
                     A-4
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="A5" class = "btn btn-outline-secondary" style="color: black">
                     A-5
                 </button>
             </div>
             <div style = "position: absolute; top: 380px; right: 250px;">
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="B1" class = "btn btn-outline-secondary" style="color: black">
                     B-1
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="B2" class = "btn btn-outline-secondary" style="color: black">
                     B-2
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="B3" class = "btn btn-outline-secondary" style="color: black">
                     B-3
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="B4" class = "btn btn-outline-secondary" style="color: black">
                     B-4
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="B5" class = "btn btn-outline-secondary" style="color: black">
                     B-5
                 </button>
             </div>
             <div style = "position: absolute; top: 460px; right: 250px;">
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="C1" class = "btn btn-outline-secondary" style="color: black">
                     C-1
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="C2" class = "btn btn-outline-secondary" style="color: black">
                     C-2
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="C3" class = "btn btn-outline-secondary" style="color: black">
                     C-3
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="C4" class = "btn btn-outline-secondary" style="color: black">
                     C-4
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="C5" class = "btn btn-outline-secondary" style="color: black">
                     C-5
                 </button>
             </div>
             <div style = "position: absolute; top: 540px; right: 250px;">
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="D1" class = "btn btn-outline-secondary" style="color: black">
                     D-1
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="D2" class = "btn btn-outline-secondary" style="color: black">
                     D-2
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="D3" class = "btn btn-outline-secondary" style="color: black">
                     D-3
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="D4" class = "btn btn-outline-secondary" style="color: black">
                     D-4
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="D5" class = "btn btn-outline-secondary" style="color: black">
                     D-5
                 </button>
             </div>
             <div style = "position: absolute; top: 620px; right: 250px;">
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="E1" class = "btn btn-outline-secondary" style="color: black">
                     E-1
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="E2" class = "btn btn-outline-secondary" style="color: black">
                     E-2
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="E3" class = "btn btn-outline-secondary" style="color: black">
                     E-3
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="E4" class = "btn btn-outline-secondary" style="color: black">
                     E-4
                 </button>
-                <button type = "button" class = "btn btn-outline-secondary" style="color: black">
+                <button type = "button" id="E5" class = "btn btn-outline-secondary" style="color: black">
                     E-5
                 </button>
             </div>
@@ -121,4 +121,165 @@
 
     </body>
 
+    <script>
+
+        const Status = {
+            UnChecked: 0,
+            Checked: 1,
+        }
+
+        let buttonA_1 = document.querySelector("#A1");
+        let buttonA_2 = document.querySelector("#A2");
+        let buttonA_3 = document.querySelector("#A3");
+        let buttonA_4 = document.querySelector("#A4");
+        let buttonA_5 = document.querySelector("#A5");
+        
+        let buttonB_1 = document.querySelector("#B1");
+        let buttonB_2 = document.querySelector("#B2");
+        let buttonB_3 = document.querySelector("#B3");
+        let buttonB_4 = document.querySelector("#B4");
+        let buttonB_5 = document.querySelector("#B5");
+
+        let buttonC_1 = document.querySelector("#C1");
+        let buttonC_2 = document.querySelector("#C2");
+        let buttonC_3 = document.querySelector("#C3");
+        let buttonC_4 = document.querySelector("#C4");
+        let buttonC_5 = document.querySelector("#C5");
+
+        let buttonD_1 = document.querySelector("#D1");
+        let buttonD_2 = document.querySelector("#D2");
+        let buttonD_3 = document.querySelector("#D3");
+        let buttonD_4 = document.querySelector("#D4");
+        let buttonD_5 = document.querySelector("#D5");
+        
+        let buttonE_1 = document.querySelector("#E1");
+        let buttonE_2 = document.querySelector("#E2");
+        let buttonE_3 = document.querySelector("#E3");
+        let buttonE_4 = document.querySelector("#E4");
+        let buttonE_5 = document.querySelector("#E5");
+
+        function convertStatus (status, button) {
+            if (status == 0) {
+                button.style.backgroundColor = "#009a00";
+                status = Status.Checked;
+                return status;
+            }
+            else if (status == 1) {
+                button.style.backgroundColor = "white";
+                status = Status.UnChecked;
+                return status;
+            }
+        }
+
+        var statusA_1 = Status.UnChecked;
+        var statusA_2 = Status.UnChecked;
+        var statusA_3 = Status.UnChecked;
+        var statusA_4 = Status.UnChecked;
+        var statusA_5 = Status.UnChecked;
+
+        buttonA_1.onclick = function () {
+            statusA_1 = convertStatus(statusA_1, this);
+        };
+        buttonA_2.onclick = function () {
+            statusA_2 = convertStatus(statusA_2, this);
+        };
+        buttonA_3.onclick = function () {
+            statusA_3 = convertStatus(statusA_3, this);
+        };
+        buttonA_4.onclick = function () {
+            statusA_4 = convertStatus(statusA_4, this);
+        };
+        buttonA_5.onclick = function () {
+            statusA_5 = convertStatus(statusA_5, this);
+        };
+
+        var statusB_1 = Status.UnChecked;
+        var statusB_2 = Status.UnChecked;
+        var statusB_3 = Status.UnChecked;
+        var statusB_4 = Status.UnChecked;
+        var statusB_5 = Status.UnChecked;
+
+        buttonB_1.onclick = function () {
+            statusB_1 = convertStatus(statusB_1, this);
+        };
+        buttonB_2.onclick = function () {
+            statusB_2 = convertStatus(statusB_2, this);
+        };
+        buttonB_3.onclick = function () {
+            statusB_3 = convertStatus(statusB_3, this);
+        };
+        buttonB_4.onclick = function () {
+            statusB_4 = convertStatus(statusB_4, this);
+        };
+        buttonB_5.onclick = function () {
+            statusB_5 = convertStatus(statusB_5, this);
+        };
+
+        var statusC_1 = Status.UnChecked;
+        var statusC_2 = Status.UnChecked;
+        var statusC_3 = Status.UnChecked;
+        var statusC_4 = Status.UnChecked;
+        var statusC_5 = Status.UnChecked;
+
+        buttonC_1.onclick = function () {
+            statusC_1 = convertStatus(statusC_1, this);
+        };
+        buttonC_2.onclick = function () {
+            statusC_2 = convertStatus(statusC_2, this);
+        };
+        buttonC_3.onclick = function () {
+            statusC_3 = convertStatus(statusC_3, this);
+        };
+        buttonC_4.onclick = function () {
+            statusC_4 = convertStatus(statusC_4, this);
+        };
+        buttonC_5.onclick = function () {
+            statusC_5 = convertStatus(statusC_5, this);
+        };
+
+        var statusD_1 = Status.UnChecked;
+        var statusD_2 = Status.UnChecked;
+        var statusD_3 = Status.UnChecked;
+        var statusD_4 = Status.UnChecked;
+        var statusD_5 = Status.UnChecked;
+
+        buttonD_1.onclick = function () {
+            statusD_1 = convertStatus(statusD_1, this);
+        };
+        buttonD_2.onclick = function () {
+            statusD_2 = convertStatus(statusD_2, this);
+        };
+        buttonD_3.onclick = function () {
+            statusD_3 = convertStatus(statusD_3, this);
+        };
+        buttonD_4.onclick = function () {
+            statusD_4 = convertStatus(statusD_4, this);
+        };
+        buttonD_5.onclick = function () {
+            statusD_4 = convertStatus(statusD_4, this);
+        };
+
+        var statusE_1 = Status.UnChecked;
+        var statusE_2 = Status.UnChecked;
+        var statusE_3 = Status.UnChecked;
+        var statusE_4 = Status.UnChecked;
+        var statusE_5 = Status.UnChecked;
+
+        buttonE_1.onclick = function () {
+            statusE_1 = convertStatus(statusE_1, this);
+        };
+        buttonE_2.onclick = function () {
+            statusE_2 = convertStatus(statusE_2, this);
+        };
+        buttonE_3.onclick = function () {
+            statusE_3 = convertStatus(statusE_3, this);
+        };
+        buttonE_4.onclick = function () {
+            statusE_4 = convertStatus(statusE_4, this);
+        };
+        buttonE_5.onclick = function () {
+            statusE_5 = convertStatus(statusE_5, this);
+        };
+        
+    </script>
 </html>
