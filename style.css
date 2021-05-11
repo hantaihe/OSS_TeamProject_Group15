@@ -7,7 +7,7 @@ body {
   width: 1250px;
 }
 
-#wrapper {
+.wrapper {
   width: 1250px;
   background: white;
   margin: auto;

@@ -20,11 +20,11 @@
             </div>
         </nav>
 
-        <div id = "wrapper">
+        <div class = "wrapper">
             <h3 style="margin-top:1rem; margin-bottom:1.5rem"> symptom part</h3>
             <img src="human.jpg" class = "ms-5" width="250"/>
 
-            <div style = "position: absolute; top: 300px; right: 250px;">
+            <div style = "position: absolute; margin-top: -750px; margin-left: 600px;">
                 <button type = "button" id="A1" class = "btn btn-outline-secondary" style="color: black">
                     A-1
                 </button>
@@ -41,7 +41,7 @@
                     A-5
                 </button>
             </div>
-            <div style = "position: absolute; top: 380px; right: 250px;">
+            <div style = "position: absolute; margin-top: -670px; margin-left: 600px;">
                 <button type = "button" id="B1" class = "btn btn-outline-secondary" style="color: black">
                     B-1
                 </button>
@@ -58,7 +58,7 @@
                     B-5
                 </button>
             </div>
-            <div style = "position: absolute; top: 460px; right: 250px;">
+            <div style = "position: absolute; margin-top: -590px; margin-left: 600px;">
                 <button type = "button" id="C1" class = "btn btn-outline-secondary" style="color: black">
                     C-1
                 </button>
@@ -75,7 +75,7 @@
                     C-5
                 </button>
             </div>
-            <div style = "position: absolute; top: 540px; right: 250px;">
+            <div style = "position: absolute; margin-top: -510px; margin-left: 600px;">
                 <button type = "button" id="D1" class = "btn btn-outline-secondary" style="color: black">
                     D-1
                 </button>
@@ -92,7 +92,7 @@
                     D-5
                 </button>
             </div>
-            <div style = "position: absolute; top: 620px; right: 250px;">
+            <div style = "position: absolute; margin-top: -430px; margin-left: 600px;">
                 <button type = "button" id="E1" class = "btn btn-outline-secondary" style="color: black">
                     E-1
                 </button>
@@ -111,17 +111,22 @@
             </div>
         </div>
 
-        <div id = "wrapper"> 
+        <div class = "wrapper" id = "disease_part"> 
             <h3 style="margin-top:1rem; margin-bottom:1.5rem"> disease part</h3>
+            
+            <p id = "disease_result">Please check your symptom</p>
+            
         </div>
 
-        <div id = "wrapper"> 
+        <div class = "wrapper" id = "solution_part"> 
             <h3 style="margin-top:1rem; margin-bottom:1.5rem"> solution part</h3>
         </div>
 
     </body>
 
     <script>
+
+        var sum = 0;
 
         const Status = {
             UnChecked: 0,
@@ -160,14 +165,14 @@
 
         function convertStatus (status, button) {
             if (status == 0) {
+                sum++;
                 button.style.backgroundColor = "#009a00";
-                status = Status.Checked;
-                return status;
+                return Status.Checked;
             }
             else if (status == 1) {
+                sum--;
                 button.style.backgroundColor = "white";
-                status = Status.UnChecked;
-                return status;
+                return Status.UnChecked;
             }
         }
 
@@ -179,18 +184,23 @@
 
         buttonA_1.onclick = function () {
             statusA_1 = convertStatus(statusA_1, this);
+            update_diseasePart();
         };
         buttonA_2.onclick = function () {
             statusA_2 = convertStatus(statusA_2, this);
+            update_diseasePart();
         };
         buttonA_3.onclick = function () {
             statusA_3 = convertStatus(statusA_3, this);
+            update_diseasePart();
         };
         buttonA_4.onclick = function () {
             statusA_4 = convertStatus(statusA_4, this);
+            update_diseasePart();
         };
         buttonA_5.onclick = function () {
             statusA_5 = convertStatus(statusA_5, this);
+            update_diseasePart();
         };
 
         var statusB_1 = Status.UnChecked;
@@ -201,18 +211,23 @@
 
         buttonB_1.onclick = function () {
             statusB_1 = convertStatus(statusB_1, this);
+            update_diseasePart();
         };
         buttonB_2.onclick = function () {
             statusB_2 = convertStatus(statusB_2, this);
+            update_diseasePart();
         };
         buttonB_3.onclick = function () {
             statusB_3 = convertStatus(statusB_3, this);
+            update_diseasePart();
         };
         buttonB_4.onclick = function () {
             statusB_4 = convertStatus(statusB_4, this);
+            update_diseasePart();
         };
         buttonB_5.onclick = function () {
             statusB_5 = convertStatus(statusB_5, this);
+            update_diseasePart();
         };
 
         var statusC_1 = Status.UnChecked;
@@ -223,18 +238,23 @@
 
         buttonC_1.onclick = function () {
             statusC_1 = convertStatus(statusC_1, this);
+            update_diseasePart();
         };
         buttonC_2.onclick = function () {
             statusC_2 = convertStatus(statusC_2, this);
+            update_diseasePart();
         };
         buttonC_3.onclick = function () {
             statusC_3 = convertStatus(statusC_3, this);
+            update_diseasePart();
         };
         buttonC_4.onclick = function () {
             statusC_4 = convertStatus(statusC_4, this);
+            update_diseasePart();
         };
         buttonC_5.onclick = function () {
             statusC_5 = convertStatus(statusC_5, this);
+            update_diseasePart();
         };
 
         var statusD_1 = Status.UnChecked;
@@ -245,18 +265,23 @@
 
         buttonD_1.onclick = function () {
             statusD_1 = convertStatus(statusD_1, this);
+            update_diseasePart();
         };
         buttonD_2.onclick = function () {
             statusD_2 = convertStatus(statusD_2, this);
+            update_diseasePart();
         };
         buttonD_3.onclick = function () {
             statusD_3 = convertStatus(statusD_3, this);
+            update_diseasePart();
         };
         buttonD_4.onclick = function () {
             statusD_4 = convertStatus(statusD_4, this);
+            update_diseasePart();
         };
         buttonD_5.onclick = function () {
-            statusD_4 = convertStatus(statusD_4, this);
+            statusD_5 = convertStatus(statusD_5, this);
+            update_diseasePart();
         };
 
         var statusE_1 = Status.UnChecked;
@@ -267,19 +292,71 @@
 
         buttonE_1.onclick = function () {
             statusE_1 = convertStatus(statusE_1, this);
+            update_diseasePart();
         };
         buttonE_2.onclick = function () {
             statusE_2 = convertStatus(statusE_2, this);
+            update_diseasePart();
         };
         buttonE_3.onclick = function () {
             statusE_3 = convertStatus(statusE_3, this);
+            update_diseasePart();
         };
         buttonE_4.onclick = function () {
             statusE_4 = convertStatus(statusE_4, this);
+            update_diseasePart();
         };
         buttonE_5.onclick = function () {
             statusE_5 = convertStatus(statusE_5, this);
+            update_diseasePart();
         };
         
+
+        
+        function update_diseasePart() {
+
+            let result = document.querySelector("#disease_result");
+            
+            if(sum == 0){
+                result.innerHTML = "Please check your symptom.";
+                return;
+            }
+        
+            //make possible results as many as possible
+
+            if(sum == 3){
+                if(statusA_1 && statusB_1 && statusC_1){
+                    result.innerHTML = "A1 && B1 && C1";
+                }
+                else if(statusA_1 && statusA_2 && statusA_3){
+                    result.innerHTML = "A1 && A1 && A1";
+                }
+                else {
+                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
+                }
+            }
+            else if (sum == 2){
+                if(statusA_1 && statusB_1){
+                    result.innerHTML = "A1 && B1";
+                }
+                else if(statusA_1 && statusC_1){
+                    result.innerHTML = "A1 && C1";
+                }
+                else {
+                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
+                }
+            }
+            else if (sum == 1){
+                result.innerHTML = "Please check more symptoms for better prediction.";
+            }
+            else {
+                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
+            }
+        }
+
+        function update_solutionPart() {
+
+        }
+
     </script>
 </html>
