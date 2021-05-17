@@ -1,415 +1,593 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>OSS Team Project(Group 15)</title>
 
-    <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-        <title>OSS Team Project(Group 15)</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-        <link rel ="stylesheet" href ="style.css">
+  <body>
+    <nav class="navbar navbar-dark bg-success">
+      <div class="container">
+        <span class="navbar-brand mb-1 h1"
+          ><i class="bi bi-clipboard-plus"></i> Find your disease!</span
+        >
+      </div>
+    </nav>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <div class="wrapper">
+      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">symptom part</h3>
+      <img src="human.jpg" class="ms-5" width="250" />
 
-    </head>
+      <p style="position: absolute; margin-top: -850px; margin-left: 600px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          A Part
+        </a>
+      </p>
 
-    <body>
-
-        <nav class="navbar navbar-dark bg-success">
-            <div class="container">
-                <span class="navbar-brand mb-1 h1"><i class="bi bi-clipboard-plus"></i> Find your disease!</span>
-            </div>
-        </nav>
-
-        <div class = "wrapper">
-            <h3 style="margin-top:1rem; margin-bottom:1.5rem"> symptom part</h3>
-            <img src="human.jpg" class = "ms-5" width="250"/>
-
-            <p style = "position: absolute; margin-top: -850px; margin-left: 600px;">
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-caret-down"></i>
-                  A Part
-                </a>
-            </p>
-
-            <div class="collapse" id="collapseExample" style = "position: absolute; margin-top: -805px; margin-left: 610px;">
-                <div>
-                    <button type = "button" id="A1" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        <p style="font-size:10px;">Headache</p>
-                    </button>
-                    <button type = "button" id="A2" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        <p style="font-size:10px;">Migraine</p>
-                    </button>
-                    <button type = "button" id="A3" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        A-3
-                    </button>
-                    <button type = "button" id="A4" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        A-4
-                    </button>
-                    <button type = "button" id="A5" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        A-5
-                    </button>
-                </div>
-            </div>
-
-            <p style = "position: absolute; margin-top: -740px; margin-left: 600px;">
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-caret-down"></i>
-                  B Part
-                </a>
-            </p>
-
-            <div class="collapse" id="collapseExample2" style = "position: absolute; margin-top: -695px; margin-left: 610px;">
-                <div>
-                    <button type = "button" id="B1" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        B-1
-                    </button>
-                    <button type = "button" id="B2" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        B-2
-                    </button>
-                    <button type = "button" id="B3" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        B-3
-                    </button>
-                    <button type = "button" id="B4" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        B-4
-                    </button>
-                    <button type = "button" id="B5" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        B-5
-                    </button>
-                </div>
-            </div>
-
-            <p style = "position: absolute; margin-top: -630px; margin-left: 600px;">
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-caret-down"></i>
-                  C Part
-                </a>
-            </p>
-
-            <div class="collapse" id="collapseExample3" style = "position: absolute; margin-top: -585px; margin-left: 610px;">
-                <div>
-                    <button type = "button" id="C1" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        C-1
-                    </button>
-                    <button type = "button" id="C2" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        C-2
-                    </button>
-                    <button type = "button" id="C3" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        C-3
-                    </button>
-                    <button type = "button" id="C4" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        C-4
-                    </button>
-                    <button type = "button" id="C5" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        C-5
-                    </button>
-                </div>
-            </div>
-
-            <p style = "position: absolute; margin-top: -520px; margin-left: 600px;">
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-caret-down"></i>
-                    D Part
-                </a>
-            </p>
-
-            <div class="collapse" id="collapseExample4" style = "position: absolute; margin-top: -475px; margin-left: 610px;">
-                <div>
-                    <button type = "button" id="D1" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        D-1
-                    </button>
-                    <button type = "button" id="D2" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        D-2
-                    </button>
-                    <button type = "button" id="D3" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        D-3
-                    </button>
-                    <button type = "button" id="D4" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        D-4
-                    </button>
-                    <button type = "button" id="D5" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        D-5
-                    </button>
-                </div>
-            </div>
-
-            <p style = "position: absolute; margin-top: -410px; margin-left: 600px;">
-                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-caret-down"></i>
-                    E Part
-                </a>
-            </p>
-
-            <div class="collapse" id="collapseExample5" style = "position: absolute; margin-top: -365px; margin-left: 610px;">
-                <div>
-                    <button type = "button" id="E1" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        E-1
-                    </button>
-                    <button type = "button" id="E2" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        E-2
-                    </button>
-                    <button type = "button" id="E3" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        E-3
-                    </button>
-                    <button type = "button" id="E4" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        E-4
-                    </button>
-                    <button type = "button" id="E5" class = "shadow-sm btn btn-outline-secondary" style="width: auto; height: auto; color: black">
-                        E-5
-                    </button>
-                </div>
-            </div>
-
-
-        
-        <div class = "wrapper" id = "disease_part"> 
-            <h3 style="margin-top:1rem; margin-bottom:1.5rem"> disease part</h3>
-            
-            <p id = "disease_result">Please check your symptom</p>
-            
+      <div
+        class="collapse"
+        id="collapseExample"
+        style="position: absolute; margin-top: -805px; margin-left: 610px"
+      >
+        <div>
+          <button
+            type="button"
+            id="A1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            <p style="font-size: 10px">Headache</p>
+          </button>
+          <button
+            type="button"
+            id="A2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            <p style="font-size: 10px">Migraine</p>
+          </button>
+          <button
+            type="button"
+            id="A3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            A-3
+          </button>
+          <button
+            type="button"
+            id="A4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            A-4
+          </button>
+          <button
+            type="button"
+            id="A5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            A-5
+          </button>
         </div>
+      </div>
 
-        <div class = "wrapper" id = "solution_part"> 
-            <h3 style="margin-top:1rem; margin-bottom:1.5rem"> solution part</h3>
+      <p style="position: absolute; margin-top: -740px; margin-left: 600px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample2"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          B Part
+        </a>
+      </p>
+
+      <div
+        class="collapse"
+        id="collapseExample2"
+        style="position: absolute; margin-top: -695px; margin-left: 610px"
+      >
+        <div>
+          <button
+            type="button"
+            id="B1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            B-1
+          </button>
+          <button
+            type="button"
+            id="B2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            B-2
+          </button>
+          <button
+            type="button"
+            id="B3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            B-3
+          </button>
+          <button
+            type="button"
+            id="B4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            B-4
+          </button>
+          <button
+            type="button"
+            id="B5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            B-5
+          </button>
         </div>
+      </div>
 
-    </body>
+      <p style="position: absolute; margin-top: -630px; margin-left: 600px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample3"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          C Part
+        </a>
+      </p>
 
-    <script>
+      <div
+        class="collapse"
+        id="collapseExample3"
+        style="position: absolute; margin-top: -585px; margin-left: 610px"
+      >
+        <div>
+          <button
+            type="button"
+            id="C1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            C-1
+          </button>
+          <button
+            type="button"
+            id="C2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            C-2
+          </button>
+          <button
+            type="button"
+            id="C3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            C-3
+          </button>
+          <button
+            type="button"
+            id="C4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            C-4
+          </button>
+          <button
+            type="button"
+            id="C5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            C-5
+          </button>
+        </div>
+      </div>
 
-        // calculate total number of clicked buttons
-        var sum = 0;
+      <p style="position: absolute; margin-top: -520px; margin-left: 600px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample4"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          D Part
+        </a>
+      </p>
 
-        // check whether button is clicked or not
-        const Status = {
-            UnChecked: 0,
-            Checked: 1,
+      <div
+        class="collapse"
+        id="collapseExample4"
+        style="position: absolute; margin-top: -475px; margin-left: 610px"
+      >
+        <div>
+          <button
+            type="button"
+            id="D1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            D-1
+          </button>
+          <button
+            type="button"
+            id="D2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            D-2
+          </button>
+          <button
+            type="button"
+            id="D3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            D-3
+          </button>
+          <button
+            type="button"
+            id="D4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            D-4
+          </button>
+          <button
+            type="button"
+            id="D5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            D-5
+          </button>
+        </div>
+      </div>
+
+      <p style="position: absolute; margin-top: -410px; margin-left: 600px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample5"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          E Part
+        </a>
+      </p>
+
+      <div
+        class="collapse"
+        id="collapseExample5"
+        style="position: absolute; margin-top: -365px; margin-left: 610px"
+      >
+        <div>
+          <button
+            type="button"
+            id="E1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            E-1
+          </button>
+          <button
+            type="button"
+            id="E2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            E-2
+          </button>
+          <button
+            type="button"
+            id="E3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            E-3
+          </button>
+          <button
+            type="button"
+            id="E4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            E-4
+          </button>
+          <button
+            type="button"
+            id="E5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; height: auto; color: black"
+          >
+            E-5
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper" id="disease_part">
+      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">disease part</h3>
+
+      <p id="disease_result">Please check your symptom</p>
+    </div>
+
+    <div class="wrapper" id="solution_part">
+      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">solution part</h3>
+    </div>
+  </body>
+
+  <script>
+    // calculate total number of clicked buttons
+    var sum = 0;
+
+    // check whether button is clicked or not
+    const Status = {
+      UnChecked: 0,
+      Checked: 1,
+    };
+
+    // get each button
+    let buttonA_1 = document.querySelector("#A1");
+    let buttonA_2 = document.querySelector("#A2");
+    let buttonA_3 = document.querySelector("#A3");
+    let buttonA_4 = document.querySelector("#A4");
+    let buttonA_5 = document.querySelector("#A5");
+
+    let buttonB_1 = document.querySelector("#B1");
+    let buttonB_2 = document.querySelector("#B2");
+    let buttonB_3 = document.querySelector("#B3");
+    let buttonB_4 = document.querySelector("#B4");
+    let buttonB_5 = document.querySelector("#B5");
+
+    let buttonC_1 = document.querySelector("#C1");
+    let buttonC_2 = document.querySelector("#C2");
+    let buttonC_3 = document.querySelector("#C3");
+    let buttonC_4 = document.querySelector("#C4");
+    let buttonC_5 = document.querySelector("#C5");
+
+    let buttonD_1 = document.querySelector("#D1");
+    let buttonD_2 = document.querySelector("#D2");
+    let buttonD_3 = document.querySelector("#D3");
+    let buttonD_4 = document.querySelector("#D4");
+    let buttonD_5 = document.querySelector("#D5");
+
+    let buttonE_1 = document.querySelector("#E1");
+    let buttonE_2 = document.querySelector("#E2");
+    let buttonE_3 = document.querySelector("#E3");
+    let buttonE_4 = document.querySelector("#E4");
+    let buttonE_5 = document.querySelector("#E5");
+
+    // once clicked, change buttons status
+    function convertStatus(status, button) {
+      if (status == 0) {
+        sum++;
+        button.style.backgroundColor = "greenyellow"; // change button's background color
+        return Status.Checked;
+      } else if (status == 1) {
+        sum--;
+        button.style.backgroundColor = "white";
+        return Status.UnChecked;
+      }
+    }
+
+    var statusA_1 = Status.UnChecked;
+    var statusA_2 = Status.UnChecked;
+    var statusA_3 = Status.UnChecked;
+    var statusA_4 = Status.UnChecked;
+    var statusA_5 = Status.UnChecked;
+
+    buttonA_1.onclick = function () {
+      // when clicked
+      statusA_1 = convertStatus(statusA_1, this); // change button status
+      update_diseasePart(); // update disease part
+    };
+    buttonA_2.onclick = function () {
+      statusA_2 = convertStatus(statusA_2, this);
+      update_diseasePart();
+    };
+    buttonA_3.onclick = function () {
+      statusA_3 = convertStatus(statusA_3, this);
+      update_diseasePart();
+    };
+    buttonA_4.onclick = function () {
+      statusA_4 = convertStatus(statusA_4, this);
+      update_diseasePart();
+    };
+    buttonA_5.onclick = function () {
+      statusA_5 = convertStatus(statusA_5, this);
+      update_diseasePart();
+    };
+
+    var statusB_1 = Status.UnChecked;
+    var statusB_2 = Status.UnChecked;
+    var statusB_3 = Status.UnChecked;
+    var statusB_4 = Status.UnChecked;
+    var statusB_5 = Status.UnChecked;
+
+    buttonB_1.onclick = function () {
+      statusB_1 = convertStatus(statusB_1, this);
+      update_diseasePart();
+    };
+    buttonB_2.onclick = function () {
+      statusB_2 = convertStatus(statusB_2, this);
+      update_diseasePart();
+    };
+    buttonB_3.onclick = function () {
+      statusB_3 = convertStatus(statusB_3, this);
+      update_diseasePart();
+    };
+    buttonB_4.onclick = function () {
+      statusB_4 = convertStatus(statusB_4, this);
+      update_diseasePart();
+    };
+    buttonB_5.onclick = function () {
+      statusB_5 = convertStatus(statusB_5, this);
+      update_diseasePart();
+    };
+
+    var statusC_1 = Status.UnChecked;
+    var statusC_2 = Status.UnChecked;
+    var statusC_3 = Status.UnChecked;
+    var statusC_4 = Status.UnChecked;
+    var statusC_5 = Status.UnChecked;
+
+    buttonC_1.onclick = function () {
+      statusC_1 = convertStatus(statusC_1, this);
+      update_diseasePart();
+    };
+    buttonC_2.onclick = function () {
+      statusC_2 = convertStatus(statusC_2, this);
+      update_diseasePart();
+    };
+    buttonC_3.onclick = function () {
+      statusC_3 = convertStatus(statusC_3, this);
+      update_diseasePart();
+    };
+    buttonC_4.onclick = function () {
+      statusC_4 = convertStatus(statusC_4, this);
+      update_diseasePart();
+    };
+    buttonC_5.onclick = function () {
+      statusC_5 = convertStatus(statusC_5, this);
+      update_diseasePart();
+    };
+
+    var statusD_1 = Status.UnChecked;
+    var statusD_2 = Status.UnChecked;
+    var statusD_3 = Status.UnChecked;
+    var statusD_4 = Status.UnChecked;
+    var statusD_5 = Status.UnChecked;
+
+    buttonD_1.onclick = function () {
+      statusD_1 = convertStatus(statusD_1, this);
+      update_diseasePart();
+    };
+    buttonD_2.onclick = function () {
+      statusD_2 = convertStatus(statusD_2, this);
+      update_diseasePart();
+    };
+    buttonD_3.onclick = function () {
+      statusD_3 = convertStatus(statusD_3, this);
+      update_diseasePart();
+    };
+    buttonD_4.onclick = function () {
+      statusD_4 = convertStatus(statusD_4, this);
+      update_diseasePart();
+    };
+    buttonD_5.onclick = function () {
+      statusD_5 = convertStatus(statusD_5, this);
+      update_diseasePart();
+    };
+
+    var statusE_1 = Status.UnChecked;
+    var statusE_2 = Status.UnChecked;
+    var statusE_3 = Status.UnChecked;
+    var statusE_4 = Status.UnChecked;
+    var statusE_5 = Status.UnChecked;
+
+    buttonE_1.onclick = function () {
+      statusE_1 = convertStatus(statusE_1, this);
+      update_diseasePart();
+    };
+    buttonE_2.onclick = function () {
+      statusE_2 = convertStatus(statusE_2, this);
+      update_diseasePart();
+    };
+    buttonE_3.onclick = function () {
+      statusE_3 = convertStatus(statusE_3, this);
+      update_diseasePart();
+    };
+    buttonE_4.onclick = function () {
+      statusE_4 = convertStatus(statusE_4, this);
+      update_diseasePart();
+    };
+    buttonE_5.onclick = function () {
+      statusE_5 = convertStatus(statusE_5, this);
+      update_diseasePart();
+    };
+
+    // function for update disease part.
+    function update_diseasePart() {
+      let result = document.querySelector("#disease_result");
+
+      if (sum == 0) {
+        result.innerHTML = "Please check your symptom.";
+        return;
+      }
+
+      // Please make possible results as many as possible.
+
+      // this is sample results
+      if (sum == 3) {
+        if (statusA_1 && statusB_1 && statusC_1) {
+          result.innerHTML = "A1 && B1 && C1";
+        } else if (statusA_1 && statusA_2 && statusA_3) {
+          result.innerHTML = "A1 && A2 && A3";
+        } else {
+          result.innerHTML =
+            "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
-
-        // get each button
-        let buttonA_1 = document.querySelector("#A1");
-        let buttonA_2 = document.querySelector("#A2");
-        let buttonA_3 = document.querySelector("#A3");
-        let buttonA_4 = document.querySelector("#A4");
-        let buttonA_5 = document.querySelector("#A5");
-        
-        let buttonB_1 = document.querySelector("#B1");
-        let buttonB_2 = document.querySelector("#B2");
-        let buttonB_3 = document.querySelector("#B3");
-        let buttonB_4 = document.querySelector("#B4");
-        let buttonB_5 = document.querySelector("#B5");
-
-        let buttonC_1 = document.querySelector("#C1");
-        let buttonC_2 = document.querySelector("#C2");
-        let buttonC_3 = document.querySelector("#C3");
-        let buttonC_4 = document.querySelector("#C4");
-        let buttonC_5 = document.querySelector("#C5");
-
-        let buttonD_1 = document.querySelector("#D1");
-        let buttonD_2 = document.querySelector("#D2");
-        let buttonD_3 = document.querySelector("#D3");
-        let buttonD_4 = document.querySelector("#D4");
-        let buttonD_5 = document.querySelector("#D5");
-        
-        let buttonE_1 = document.querySelector("#E1");
-        let buttonE_2 = document.querySelector("#E2");
-        let buttonE_3 = document.querySelector("#E3");
-        let buttonE_4 = document.querySelector("#E4");
-        let buttonE_5 = document.querySelector("#E5");
-
-        // once clicked, change buttons status
-        function convertStatus (status, button) {
-            if (status == 0) {
-                sum++;
-                button.style.backgroundColor = "greenyellow"; // change button's background color
-                return Status.Checked;
-            }
-            else if (status == 1) {
-                sum--;
-                button.style.backgroundColor = "white";
-                return Status.UnChecked;
-            }
+      } else if (sum == 2) {
+        if (statusA_1 && statusB_1) {
+          result.innerHTML = "A1 && B1";
+        } else if (statusA_1 && statusC_1) {
+          result.innerHTML = "A1 && C1";
+        } else {
+          result.innerHTML =
+            "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
+      } else if (sum == 1) {
+        result.innerHTML = "Please check more symptoms for better prediction.";
+      } else {
+        result.innerHTML =
+          "Sorry, we cannot find such disease. Please report your disease to us :-)";
+      }
+    }
 
-        var statusA_1 = Status.UnChecked;
-        var statusA_2 = Status.UnChecked;
-        var statusA_3 = Status.UnChecked;
-        var statusA_4 = Status.UnChecked;
-        var statusA_5 = Status.UnChecked;
-
-        buttonA_1.onclick = function () { // when clicked
-            statusA_1 = convertStatus(statusA_1, this); // change button status
-            update_diseasePart(); // update disease part
-        };
-        buttonA_2.onclick = function () {
-            statusA_2 = convertStatus(statusA_2, this);
-            update_diseasePart();
-        };
-        buttonA_3.onclick = function () {
-            statusA_3 = convertStatus(statusA_3, this);
-            update_diseasePart();
-        };
-        buttonA_4.onclick = function () {
-            statusA_4 = convertStatus(statusA_4, this);
-            update_diseasePart();
-        };
-        buttonA_5.onclick = function () {
-            statusA_5 = convertStatus(statusA_5, this);
-            update_diseasePart();
-        };
-
-        var statusB_1 = Status.UnChecked;
-        var statusB_2 = Status.UnChecked;
-        var statusB_3 = Status.UnChecked;
-        var statusB_4 = Status.UnChecked;
-        var statusB_5 = Status.UnChecked;
-
-        buttonB_1.onclick = function () {
-            statusB_1 = convertStatus(statusB_1, this);
-            update_diseasePart();
-        };
-        buttonB_2.onclick = function () {
-            statusB_2 = convertStatus(statusB_2, this);
-            update_diseasePart();
-        };
-        buttonB_3.onclick = function () {
-            statusB_3 = convertStatus(statusB_3, this);
-            update_diseasePart();
-        };
-        buttonB_4.onclick = function () {
-            statusB_4 = convertStatus(statusB_4, this);
-            update_diseasePart();
-        };
-        buttonB_5.onclick = function () {
-            statusB_5 = convertStatus(statusB_5, this);
-            update_diseasePart();
-        };
-
-        var statusC_1 = Status.UnChecked;
-        var statusC_2 = Status.UnChecked;
-        var statusC_3 = Status.UnChecked;
-        var statusC_4 = Status.UnChecked;
-        var statusC_5 = Status.UnChecked;
-
-        buttonC_1.onclick = function () {
-            statusC_1 = convertStatus(statusC_1, this);
-            update_diseasePart();
-        };
-        buttonC_2.onclick = function () {
-            statusC_2 = convertStatus(statusC_2, this);
-            update_diseasePart();
-        };
-        buttonC_3.onclick = function () {
-            statusC_3 = convertStatus(statusC_3, this);
-            update_diseasePart();
-        };
-        buttonC_4.onclick = function () {
-            statusC_4 = convertStatus(statusC_4, this);
-            update_diseasePart();
-        };
-        buttonC_5.onclick = function () {
-            statusC_5 = convertStatus(statusC_5, this);
-            update_diseasePart();
-        };
-
-        var statusD_1 = Status.UnChecked;
-        var statusD_2 = Status.UnChecked;
-        var statusD_3 = Status.UnChecked;
-        var statusD_4 = Status.UnChecked;
-        var statusD_5 = Status.UnChecked;
-
-        buttonD_1.onclick = function () {
-            statusD_1 = convertStatus(statusD_1, this);
-            update_diseasePart();
-        };
-        buttonD_2.onclick = function () {
-            statusD_2 = convertStatus(statusD_2, this);
-            update_diseasePart();
-        };
-        buttonD_3.onclick = function () {
-            statusD_3 = convertStatus(statusD_3, this);
-            update_diseasePart();
-        };
-        buttonD_4.onclick = function () {
-            statusD_4 = convertStatus(statusD_4, this);
-            update_diseasePart();
-        };
-        buttonD_5.onclick = function () {
-            statusD_5 = convertStatus(statusD_5, this);
-            update_diseasePart();
-        };
-
-        var statusE_1 = Status.UnChecked;
-        var statusE_2 = Status.UnChecked;
-        var statusE_3 = Status.UnChecked;
-        var statusE_4 = Status.UnChecked;
-        var statusE_5 = Status.UnChecked;
-
-        buttonE_1.onclick = function () {
-            statusE_1 = convertStatus(statusE_1, this);
-            update_diseasePart();
-        };
-        buttonE_2.onclick = function () {
-            statusE_2 = convertStatus(statusE_2, this);
-            update_diseasePart();
-        };
-        buttonE_3.onclick = function () {
-            statusE_3 = convertStatus(statusE_3, this);
-            update_diseasePart();
-        };
-        buttonE_4.onclick = function () {
-            statusE_4 = convertStatus(statusE_4, this);
-            update_diseasePart();
-        };
-        buttonE_5.onclick = function () {
-            statusE_5 = convertStatus(statusE_5, this);
-            update_diseasePart();
-        };
-        
-
-        // function for update disease part.
-        function update_diseasePart() {
-
-            let result = document.querySelector("#disease_result");
-            
-            if(sum == 0){
-                result.innerHTML = "Please check your symptom.";
-                return;
-            }
-        
-            // Please make possible results as many as possible.
-
-            // this is sample results
-            if(sum == 3){
-                if(statusA_1 && statusB_1 && statusC_1){
-                    result.innerHTML = "A1 && B1 && C1";
-                }
-                else if(statusA_1 && statusA_2 && statusA_3){
-                    result.innerHTML = "A1 && A2 && A3";
-                }
-                else {
-                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
-                }
-            }
-            else if (sum == 2){
-                if(statusA_1 && statusB_1){
-                    result.innerHTML = "A1 && B1";
-                }
-                else if(statusA_1 && statusC_1){
-                    result.innerHTML = "A1 && C1";
-                }
-                else {
-                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
-                }
-            }
-            else if (sum == 1){
-                result.innerHTML = "Please check more symptoms for better prediction.";
-            }
-            else {
-                result.innerHTML = "Sorry, we cannot find such disease. Please report your disease to us :-)";
-            }
-
-        }
-
-        function update_solutionPart() {
-            // function for update solution part.
-        }
-
-    </script>
+    function update_solutionPart() {
+      // function for update solution part.
+    }
+  </script>
 </html>
