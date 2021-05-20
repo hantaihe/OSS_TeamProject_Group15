@@ -223,7 +223,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Muscle Weakness
+            Muscle Pain
           </button>
           <button
             type="button"
@@ -269,7 +269,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Obsession
+            Lethargy
           </button>
           <button
             type="button"
@@ -302,7 +302,9 @@
     <div class="wrapper" id="disease_part">
       <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">disease part</h3>
 
-      <p id="disease_result">Please check your symptom</p>
+      <p style="font-weight: bolder; font-size: larger" id="disease_result">
+        Please check your symptom
+      </p>
     </div>
 
     <div class="wrapper" id="solution_part">
@@ -491,20 +493,38 @@
       // Please make possible results as many as possible.
 
       // this is sample results
-      if (sum == 3) {
-        if (statusA_1 && statusB_1 && statusC_1) {
-          result.innerHTML = "A1 && B1 && C1";
-        } else if (statusA_1 && statusA_2 && statusA_3) {
-          result.innerHTML = "A1 && A2 && A3";
+      if (sum == 5) {
+        if (statusA_1 && statusA_2 && statusA_3 && statusB_1 && statusB_2) {
+          result.innerHTML = "Hypertension";
+        } else {
+          result.innerHTML =
+            "Sorry, we cannot find such disease. Please report your disease to us :-)";
+        }
+      } else if (sum == 4) {
+        if (statusA_1 && statusA_3 && statusB_1 && statusB_2) {
+          result.innerHTML = "Turtle neck syndrome";
+        } else if (statusA_3 && statusC_4 && statusD_3 && statusD_4) {
+          result.innerHTML = "Chronic Fatigue Syndrome";
+        } else if (statusA_3 && statusD_1 && statusD_3 && statusD_4) {
+          result.innerHTML = "Isomnia";
+        } else if (statusA_3 && statusD_2 && statusD_3 && statusD_4) {
+          result.innerHTML = "Depressive disorder";
+        } else {
+          result.innerHTML =
+            "Sorry, we cannot find such disease. Please report your disease to us :-)";
+        }
+      } else if (sum == 3) {
+        if (statusC_1 && statusC_2 && statusC_3) {
+          result.innerHTML = "Herniation of intervertebral disk";
+        } else if (statusB_4 && statusB_5 && statusD_5) {
+          result.innerHTML = "Carpal tunnel syndrome";
         } else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
       } else if (sum == 2) {
-        if (statusA_1 && statusB_1) {
-          result.innerHTML = "A1 && B1";
-        } else if (statusA_1 && statusC_1) {
-          result.innerHTML = "A1 && C1";
+        if (statusA_4 && statusA_5) {
+          result.innerHTML = "Dry eye syndrome";
         } else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";

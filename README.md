@@ -2,16 +2,18 @@
 
 ## Types of diseases
 
-- **hypertension:** stiff neck, headache, Migraine, fatigue, shoulder discomfort
+- **Hypertension:** Stiff Neck, Headache, Migraine, Fatigue, Shoulder Discomfort
 
-- **Turtle neck syndrome:** stiff neck, fatigue, shoulder discomfort, headache
+- **Turtle neck syndrome:** Stiff Neck, Fatigue, Shoulder Discomfort, Headache
 
-- **Herniation of intervertebral disk:** low back pain, Numbness in the legs, buttocks pain
+- **Herniation of intervertebral disk:** Low Back Pain, Leg Numbness, Buttocks Pain
 
-- **Dry eye syndrome:** eye strain, eye irritation, excessive tears
+- **Dry eye syndrome:** Eye strain, Excessive tears
 
-- **Carpal tunnel syndrome:** numbness, sensory abnormalities, hand pain
+- **Carpal tunnel syndrome:** Finger Numbness, Sensory Abnormalities, Wrist Pain
 
-- **Chronic Fatigue Syndrome:** Systemic muscle pain, fatigue, Sleep disorder, Eating disorder
+- **Chronic Fatigue Syndrome:** Muscle Pain, Fatigue, Sleep disorder, Eating disorder
 
-- **Isomnia:** fatigue, Anxiety, Sleep disorder, Eating disorder
+- **Isomnia:** Fatigue, Anxiety, Sleep disorder, Eating disorder
+
+- **Depressive disorder:** Lethargy, Fatigue, Sleep disorder, Eating disorder
