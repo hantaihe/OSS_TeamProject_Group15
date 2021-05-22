@@ -47,14 +47,80 @@
     </nav>
 
     <div class="wrapper">
-      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">Please select your symptom</h3>
+      <h3 class="smallWrapper">
+        Please select your symptoms!
+        <i class="bi bi-check2"></i>
+      </h3>
+
       <img src="human.jpg" class="ms-5" width="250" />
 
-      <p style="position: absolute; margin-top: -900px; margin-left: 600px">
+      <p style="position: absolute; margin-top: -880px; margin-left: 575px">
         <a
           class="btn btn-secondary"
           data-bs-toggle="collapse"
           href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          ><i class="bi bi-caret-down"></i>
+          Mental isuues
+        </a>
+      </p>
+
+      <div
+        class="collapse"
+        id="collapseExample"
+        style="position: absolute; margin-top: -830px; margin-left: 590px"
+      >
+        <div>
+          <button
+            type="button"
+            id="A1"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Anxiety
+          </button>
+          <button
+            type="button"
+            id="A2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Lethargy
+          </button>
+          <button
+            type="button"
+            id="A3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Sleep disorder
+          </button>
+          <button
+            type="button"
+            id="A4"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Eating disorder
+          </button>
+          <button
+            type="button"
+            id="A5"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Sensory Abnormalities
+          </button>
+        </div>
+      </div>
+
+      <p style="position: absolute; margin-top: -725px; margin-left: 575px">
+        <a
+          class="btn btn-secondary"
+          data-bs-toggle="collapse"
+          href="#collapseExample2"
           role="button"
           aria-expanded="false"
           aria-controls="collapseExample"
@@ -65,29 +131,13 @@
 
       <div
         class="collapse"
-        id="collapseExample"
-        style="position: absolute; margin-top: -850px; margin-left: 610px"
+        id="collapseExample2"
+        style="position: absolute; margin-top: -675px; margin-left: 590px"
       >
         <div>
           <button
             type="button"
-            id="A1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Headache
-          </button>
-          <button
-            type="button"
-            id="A2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Migraine
-          </button>
-          <button
-            type="button"
-            id="A3"
+            id="B1"
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
@@ -95,7 +145,23 @@
           </button>
           <button
             type="button"
-            id="A4"
+            id="B2"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Headache
+          </button>
+          <button
+            type="button"
+            id="B3"
+            class="shadow-sm btn btn-outline-secondary"
+            style="width: auto; font-size: small; color: black"
+          >
+            Migraine
+          </button>
+          <button
+            type="button"
+            id="B4"
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
@@ -103,7 +169,7 @@
           </button>
           <button
             type="button"
-            id="A5"
+            id="B5"
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
@@ -112,11 +178,11 @@
         </div>
       </div>
 
-      <p style="position: absolute; margin-top: -740px; margin-left: 600px">
+      <p style="position: absolute; margin-top: -570px; margin-left: 575px">
         <a
           class="btn btn-secondary"
           data-bs-toggle="collapse"
-          href="#collapseExample2"
+          href="#collapseExample3"
           role="button"
           aria-expanded="false"
           aria-controls="collapseExample"
@@ -127,70 +193,8 @@
 
       <div
         class="collapse"
-        id="collapseExample2"
-        style="position: absolute; margin-top: -690px; margin-left: 610px"
-      >
-        <div>
-          <button
-            type="button"
-            id="B1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Shoulder Discomfort
-          </button>
-          <button
-            type="button"
-            id="B2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Stiff Neck
-          </button>
-          <button
-            type="button"
-            id="B3"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Arm Pain
-          </button>
-          <button
-            type="button"
-            id="B4"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Finger Numbness
-          </button>
-          <button
-            type="button"
-            id="B5"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Wrist Pain
-          </button>
-        </div>
-      </div>
-
-      <p style="position: absolute; margin-top: -580px; margin-left: 600px">
-        <a
-          class="btn btn-secondary"
-          data-bs-toggle="collapse"
-          href="#collapseExample3"
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          ><i class="bi bi-caret-down"></i>
-          Back / Waist
-        </a>
-      </p>
-
-      <div
-        class="collapse"
         id="collapseExample3"
-        style="position: absolute; margin-top: -530px; margin-left: 610px"
+        style="position: absolute; margin-top: -520px; margin-left: 590px"
       >
         <div>
           <button
@@ -199,7 +203,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Low Back Pain
+            Finger Numbness
           </button>
           <button
             type="button"
@@ -207,7 +211,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Leg Numbness
+            Wrist Pain
           </button>
           <button
             type="button"
@@ -215,7 +219,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Buttocks Pain
+            Arm Pain
           </button>
           <button
             type="button"
@@ -223,7 +227,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Muscle Pain
+            Stiff Neck
           </button>
           <button
             type="button"
@@ -231,12 +235,12 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: small; color: black"
           >
-            Walking Abnormalities
+            Shoulder Discomfort
           </button>
         </div>
       </div>
 
-      <p style="position: absolute; margin-top: -420px; margin-left: 600px">
+      <p style="position: absolute; margin-top: -415px; margin-left: 575px">
         <a
           class="btn btn-secondary"
           data-bs-toggle="collapse"
@@ -245,14 +249,14 @@
           aria-expanded="false"
           aria-controls="collapseExample"
           ><i class="bi bi-caret-down"></i>
-          Mental problems
+          Lower Body / Back
         </a>
       </p>
 
       <div
         class="collapse"
         id="collapseExample4"
-        style="position: absolute; margin-top: -370px; margin-left: 610px"
+        style="position: absolute; margin-top: -365px; margin-left: 590px"
       >
         <div>
           <button
@@ -261,7 +265,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Anxiety
+            Muscle Pain
           </button>
           <button
             type="button"
@@ -269,7 +273,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Lethargy
+            Low Back Pain
           </button>
           <button
             type="button"
@@ -277,7 +281,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Sleep disorder
+            Buttocks Pain
           </button>
           <button
             type="button"
@@ -285,7 +289,7 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Eating disorder
+            Leg Numbness
           </button>
           <button
             type="button"
@@ -293,18 +297,18 @@
             class="shadow-sm btn btn-outline-secondary"
             style="width: auto; font-size: smaller; color: black"
           >
-            Sensory Abnormalities
+            Walking Abnormalities
           </button>
         </div>
       </div>
     </div>
 
-    <div class="wrapper" id="disease_part">
-      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">disease part</h3>
-
+    
+    <div class="wrapper d-flex" id="disease_part">
       <p style="font-weight: bolder; font-size: larger" id="disease_result">
-        Please select symptoms above.
+        Nothing clicked. Please click your symptoms.
       </p>
+      <a></a>
     </div>
 
     <div class="wrapper" id="solution_part">
@@ -326,6 +330,11 @@
     const Status = {
       UnChecked: 0,
       Checked: 1,
+    };
+
+    const Disease = {
+      Name: "",
+      Link: "",
     };
 
     // get each button
@@ -483,10 +492,14 @@
 
     // function for update disease part.
     function update_diseasePart() {
+
+      let link = document.querySelector("#disease_part a");
+      link.textContent = "";
+
       let result = document.querySelector("#disease_result");
 
       if (sum == 0) {
-        result.innerHTML = "Please check your symptom.";
+        result.innerHTML = "Nothing clicked. Please click your symptoms.";
         return;
       }
 
@@ -494,47 +507,158 @@
 
       // this is sample results
       if (sum == 5) {
-        if (statusA_1 && statusA_2 && statusA_3 && statusB_1 && statusB_2) {
-          result.innerHTML = "Hypertension";
-        } else {
+
+        if (statusB_1 && statusB_2 && statusB_3 && statusC_4 && statusC_5) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Hypertension";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Hypertension";
+          displayDisease(Disease);
+        } 
+        else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
-      } else if (sum == 4) {
-        if (statusA_1 && statusA_3 && statusB_1 && statusB_2) {
-          result.innerHTML = "Turtle neck syndrome";
-        } else if (statusA_3 && statusC_4 && statusD_3 && statusD_4) {
-          result.innerHTML = "Chronic Fatigue Syndrome";
-        } else if (statusA_3 && statusD_1 && statusD_3 && statusD_4) {
-          result.innerHTML = "Isomnia";
-        } else if (statusA_3 && statusD_2 && statusD_3 && statusD_4) {
-          result.innerHTML = "Depressive disorder";
-        } else {
+
+      } 
+      else if (sum == 4) {
+
+        if (statusB_1 && statusB_2 && statusC_4 && statusC_5) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Turtle neck syndrome";
+          Disease.Link =
+            "https://sebarun.com/en/info/page41.php";
+          displayDisease(Disease);
+        }
+        else if (statusA_3 && statusA_4 && statusB_1 && statusD_1) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Chronic Fatigue Syndrome";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+          displayDisease(Disease);
+        } 
+        else if (statusA_1 && statusA_3 && statusA_4 && statusB_1) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Insomnia";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Insomnia";
+          displayDisease(Disease);
+        } 
+        else if (statusA_2 && statusA_3 && statusA_4 && statusB_1) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Depressive disorder";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Mood_disorder#Depressive_disorders";
+          displayDisease(Disease);
+        } 
+        else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
-      } else if (sum == 3) {
-        if (statusC_1 && statusC_2 && statusC_3) {
-          result.innerHTML = "Herniation of intervertebral disk";
-        } else if (statusB_4 && statusB_5 && statusD_5) {
-          result.innerHTML = "Carpal tunnel syndrome";
-        } else {
+      } 
+      else if (sum == 3) {
+        
+        if (statusB_1 && statusC_4 && statusC_5) {
+          result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Turtle neck syndrome";
+            Disease.Link =
+            "https://sebarun.com/en/info/page41.php";
+            displayDisease(Disease);
+        } 
+        else if (statusA_3 && statusA_4 && statusB_1) {
+            result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Chronic Fatigue Syndrome";
+            Disease.Link =
+            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+            displayDisease(Disease);
+        } 
+        else if (statusD_2 && statusD_3 && statusD_4) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Herniation of intervertebral disk";
+          Disease.Link =
+            "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+            displayDisease(Disease);
+        } 
+        else if (statusA_5 && statusC_1 && statusC_2) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Carpal tunnel syndrome";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+            displayDisease(Disease);
+        } 
+        else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
-      } else if (sum == 2) {
-        if (statusA_4 && statusA_5) {
-          result.innerHTML = "Dry eye syndrome";
-        } else {
+
+      } 
+      else if (sum == 2) {
+
+        if (statusC_4 && statusC_5) {
+          result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Turtle neck syndrome";
+            Disease.Link =
+            "https://sebarun.com/en/info/page41.php";
+            displayDisease(Disease);
+        } 
+        else if (statusA_3 && statusB_1) {
+          result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Chronic Fatigue Syndrome";
+            Disease.Link =
+            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+            displayDisease(Disease);
+        } 
+        else if (statusC_1 && statusC_2) {
+          result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Carpal tunnel syndrome";
+            Disease.Link =
+            "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+            displayDisease(Disease);
+        } 
+        else if (statusD_2 && statusD_3) {
+          result.innerHTML =
+            "Possible Disease (Click more sysmptoms for better prediction):  ";
+            Disease.Name = "Herniation of intervertebral disk ";
+            Disease.Link =
+            "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+            displayDisease(Disease);
+        } 
+        else if (statusB_4 && statusB_5) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Dry eye syndrome";
+          Disease.Link =
+            "https://en.wikipedia.org/wiki/Dry_eye_syndrome";
+            displayDisease(Disease);
+        } 
+        else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
-      } else if (sum == 1) {
+
+      } 
+      else if (sum == 1) {
         result.innerHTML = "Please check more symptoms for better prediction.";
-      } else {
+      } 
+      else {
         result.innerHTML =
           "Sorry, we cannot find such disease. Please report your disease to us :-)";
       }
+    }
+
+    function displayDisease(Disease_Detail) {
+
+
+      let link = document.querySelector("#disease_part a");
+
+      link.removeAttribute("href");
+      link.href = Disease_Detail.Link;
+
+      link.textContent = Disease_Detail.Name;
     }
 
     function update_solutionPart() {
