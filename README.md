@@ -25,3 +25,27 @@
 
 - **Depressive disorder:** Lethargy, Fatigue, Sleep disorder, Eating disorder
   https://en.wikipedia.org/wiki/Mood_disorder#Depressive_disorders
+
+- **Fatigue:** Fatigue, Lethargy
+  https://en.wikipedia.org/wiki/Fatigue
+
+- **Spondylopathy:** Walking Abnormalities, Leg Numbness
+  https://en.wikipedia.org/wiki/Spondylopathy
+
+- **Eating disorder:** Eating disorder
+  https://en.wikipedia.org/wiki/Eating_disorder
+
+- **Shoulder disorder:** Shoulder Discomfort
+  https://en.wikipedia.org/wiki/Shoulder_problem
+
+- **Eye strain:** Eye Strain
+  https://en.wikipedia.org/wiki/Eye_strain
+
+- **Myalgia:** Muscle Pain
+  https://en.wikipedia.org/wiki/Myalgia
+
+- **Low Back Pain:** Low Back Pain
+  https://en.wikipedia.org/wiki/Low_back_pain
+
+- **Wrist Pain:** Wrist Pain
+  https://en.wikipedia.org/wiki/Wrist_pain
