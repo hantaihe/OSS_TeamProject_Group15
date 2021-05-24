@@ -473,33 +473,57 @@
 
     <!-- Solution Part -->
     <div class="wrapper" id="solution_part">
-      <h3 style="margin-top: 1rem; margin-bottom: 1.5rem">solution part</h3>
-      <div class="map_wrap">
-        <div
-          id="map"
+      <div class="d-flex">
+        <p style="font-weight: bolder; font-size: 1.5rem">
+          Solution <i class="bi bi-emoji-smile"></i> :
+        </p>
+        <p
           style="
-            width: 500px;
-            height: 400px;
-            margin-left: 5rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            overflow: hidden;
+            margin-top: 3px;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            margin-left: 1rem;
           "
-        ></div>
+          id="solution_text"
+        ></p>
+      </div>
+      <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
+        Nearby Hospital:
+      </p>
 
-        <div id="menu_wrap" class="bg_white">
-          <div class="option">
-            <div>
-              <form onsubmit="searchPlaces(); return false;">
-                키워드 :
-                <input type="text" value="율전동 병원" id="keyword" size="15" />
-                <button type="submit">검색하기</button>
-              </form>
+      <div class="d-flex">
+        <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
+          <div
+            id="map"
+            style="
+              width: 500px;
+              height: 400px;
+              margin-left: 5rem;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              overflow: hidden;
+            "
+          ></div>
+
+          <div id="menu_wrap" class="bg_white">
+            <div class="option">
+              <div>
+                <form onsubmit="searchPlaces(); return false;">
+                  키워드 :
+                  <input
+                    type="text"
+                    value="율전동 병원"
+                    id="keyword"
+                    size="15"
+                  />
+                  <button type="submit">검색하기</button>
+                </form>
+              </div>
             </div>
+            <hr />
+            <ul id="placesList"></ul>
+            <div id="pagination"></div>
           </div>
-          <hr />
-          <ul id="placesList"></ul>
-          <div id="pagination"></div>
         </div>
       </div>
       <script
@@ -523,6 +547,7 @@
     const Disease = {
       Name: "",
       Link: "",
+      Solution: "",
     };
 
     // get each button element
@@ -685,6 +710,9 @@
       let link = document.querySelector("#disease_part a");
       link.textContent = "";
 
+      let solutionText = document.querySelector("#solution_text");
+      solutionText.textContent = "";
+
       // get "disease part" element
       let result = document.querySelector("#disease_result");
 
@@ -699,7 +727,10 @@
           result.innerHTML = "Disease:  "; // set text
           Disease.Name = "Hypertension"; // give information(name) for Disease
           Disease.Link = "https://en.wikipedia.org/wiki/Hypertension"; // give information(url) for Disease
+          Disease.Solution =
+            "Maintaining normal weight, reducing salty food and drinking, and physical activity.";
           displayDisease(Disease); // use displayDisease function
+          displaySolution(Disease);
         } else {
           // out of case
           result.innerHTML =
@@ -793,13 +824,55 @@
           Disease.Name = "Dry eye syndrome";
           Disease.Link = "https://en.wikipedia.org/wiki/Dry_eye_syndrome";
           displayDisease(Disease);
+        } else if (statusA_2 && statusB_1) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Fatigue";
+          Disease.Link = "https://en.wikipedia.org/wiki/Fatigue";
+          displayDisease(Disease);
+        } else if (statusD_4 && statusD_5) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Spondylopathy";
+          Disease.Link = "https://en.wikipedia.org/wiki/Spondylopathy";
+          displayDisease(Disease);
         } else {
           result.innerHTML =
             "Sorry, we cannot find such disease. Please report your disease to us :-)";
         }
       } else if (sum == 1) {
-        // require more symptoms
-        result.innerHTML = "Please check more symptoms for better prediction.";
+        if (statusA_4) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Eating disorder";
+          Disease.Link = "https://en.wikipedia.org/wiki/Eating_disorder";
+          displayDisease(Disease);
+        } else if (statusC_5) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Shoulder Discomfort";
+          Disease.Link = "https://en.wikipedia.org/wiki/Shoulder_problem";
+          displayDisease(Disease);
+        } else if (statusB_4) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Eye Strain";
+          Disease.Link = "https://en.wikipedia.org/wiki/Eye_strain";
+          displayDisease(Disease);
+        } else if (statusD_2) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Low Back Pain";
+          Disease.Link = "https://en.wikipedia.org/wiki/Low_back_pain";
+          displayDisease(Disease);
+        } else if (statusD_1) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Muscle Pain(Myalgia)";
+          Disease.Link = "https://en.wikipedia.org/wiki/Myalgia";
+          displayDisease(Disease);
+        } else if (statusC_2) {
+          result.innerHTML = "Disease:  ";
+          Disease.Name = "Wrist Pain";
+          Disease.Link = "https://en.wikipedia.org/wiki/Wrist_pain";
+          displayDisease(Disease);
+        } else {
+          result.innerHTML =
+            "Please check more symptoms for better prediction.";
+        }
       } else {
         // out of case
         result.innerHTML =
@@ -823,6 +896,12 @@
 
       // set name
       link.textContent = Disease_Detail.Name;
+    }
+
+    function displaySolution(Disease_Detail) {
+      let solutionText = document.querySelector("#solution_text");
+
+      solution_text.textContent = Disease_Detail.Solution;
     }
   </script>
   <script>
