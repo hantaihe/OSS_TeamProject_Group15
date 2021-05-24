@@ -1,45 +1,125 @@
-body {
-  background: white;
-  font-family: "Segoe UI";
-}
+  body {
+    background: white;
+    font-family: "Segoe UI";
+  }
+  
+  .container {
+    width: 1250px;
+  }
 
-.container {
-  width: 1250px;
-}
+  .wrapper {
+    
+    width: 1250px;
+    background: white;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .smallWrapper {
+    width: 450px;
+    background: white;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    padding: 12px;
+    padding-left: 20px;
+  }
+  
+  button {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
+  
+ 
+  section {
+    
+    height: 100vh;
+    width: 85vw;
+    background: white;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+   }
 
-.wrapper {
-  width: 1250px;
-  background: white;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid black;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
-}
+  .smallWrapper {
+    width: 450px;
+    background: white;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 12px;
+    padding-left: 20px;
+  }
 
+  /*Responsive human*/
 
-.smallWrapper {
-  width: 450px;
-  background: white;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 6rem;
-  padding: 12px;
-  padding-left: 20px;
-}
-
-button {
-  width: 100px;
-  height: 50px;
-  background-color: white;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 30px;
-}
-button:hover {
-  cursor: pointer;
-  cursor: hand;
-}
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 140px;
+    height: 260px;
+    display: block;
+    margin-left: 220px;
+    margin-top: 60px;
+  }
+  .human-body svg:hover {
+    cursor: pointer;
+  }
+  .human-body svg:hover path {
+    fill: #ff7d16;
+  }
+  .human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+  }
+  .human-body svg.head {
+    margin-left: -28.5px;
+    top: -50px;
+  }
+  .human-body svg.shoulder {
+    margin-left: -53.5px;
+    top: 42px;
+  }
+  .human-body svg.arm {
+    margin-left: -78px;
+    top: 114px;
+  }
+  .human-body svg.chest {
+    margin-left: -43.5px;
+    top: 70px;
+  }
+  .human-body svg.stomach {
+    margin-left: -37.5px;
+    top: 142px;
+  }
+  .human-body svg.legs {
+    margin-left: -46.5px;
+    top: 260px;
+    z-index: 9999;
+  }
+  .human-body svg.hands {
+    margin-left: -102.5px;
+    top: 258px;
+  }
+  
+  

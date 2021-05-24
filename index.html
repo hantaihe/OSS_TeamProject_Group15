@@ -52,19 +52,13 @@
       }
       #menu_wrap hr {
         display: block;
-        height: 1px;
+        height: 2px;
         border: 0;
         border-top: 2px solid #5f5f5f;
         margin: 3px 0;
       }
       #menu_wrap .option {
         text-align: center;
-      }
-      #menu_wrap .option p {
-        margin: 10px 0;
-      }
-      #menu_wrap .option button {
-        margin-left: 5px;
       }
       #placesList li {
         list-style: none;
@@ -171,8 +165,8 @@
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- sylesheet
-    <script src="kakaoMpa.js"></script>-->
+    <!-- sylesheet -->
+    <script src="kakaoMpa.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -202,898 +196,930 @@
       </div>
     </nav>
 
-    <div class="wrapper">
-      <h3 class="smallWrapper">
-        Please select your symptoms!
-        <i class="bi bi-check2"></i>
-      </h3>
-
-      <img src="human.jpg" class="ms-5" width="250" />
-
-      <!-- First Part -->
-      <p style="position: absolute; margin-top: -880px; margin-left: 575px">
-        <a
-          class="btn btn-secondary"
-          data-bs-toggle="collapse"
-          href="#collapseExample"
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          ><i class="bi bi-caret-down"></i>
-          Mental Issues
-        </a>
-      </p>
-
-      <div
-        class="collapse"
-        id="collapseExample"
-        style="position: absolute; margin-top: -830px; margin-left: 590px"
-      >
-        <div>
-          <button
-            type="button"
-            id="A1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Anxiety
-          </button>
-          <button
-            type="button"
-            id="A2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Lethargy
-          </button>
-          <button
-            type="button"
-            id="A3"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Sleep disorder
-          </button>
-          <button
-            type="button"
-            id="A4"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Eating disorder
-          </button>
-          <button
-            type="button"
-            id="A5"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Sensory Abnormalities
-          </button>
-        </div>
-      </div>
-
-      <!-- Second Part -->
-      <p style="position: absolute; margin-top: -725px; margin-left: 575px">
-        <a
-          class="btn btn-secondary"
-          data-bs-toggle="collapse"
-          href="#collapseExample2"
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          ><i class="bi bi-caret-down"></i>
-          Head / Face
-        </a>
-      </p>
-
-      <div
-        class="collapse"
-        id="collapseExample2"
-        style="position: absolute; margin-top: -675px; margin-left: 590px"
-      >
-        <div>
-          <button
-            type="button"
-            id="B1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Fatigue
-          </button>
-          <button
-            type="button"
-            id="B2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Headache
-          </button>
-          <button
-            type="button"
-            id="B3"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Migraine
-          </button>
-          <button
-            type="button"
-            id="B4"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Eye Strain
-          </button>
-          <button
-            type="button"
-            id="B5"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Excessive Tears
-          </button>
-        </div>
-      </div>
-
-      <!-- Third Part -->
-      <p style="position: absolute; margin-top: -570px; margin-left: 575px">
-        <a
-          class="btn btn-secondary"
-          data-bs-toggle="collapse"
-          href="#collapseExample3"
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          ><i class="bi bi-caret-down"></i>
-          Upper Body
-        </a>
-      </p>
-
-      <div
-        class="collapse"
-        id="collapseExample3"
-        style="position: absolute; margin-top: -520px; margin-left: 590px"
-      >
-        <div>
-          <button
-            type="button"
-            id="C1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Finger Numbness
-          </button>
-          <button
-            type="button"
-            id="C2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Wrist Pain
-          </button>
-          <button
-            type="button"
-            id="C3"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Arm Pain
-          </button>
-          <button
-            type="button"
-            id="C4"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Stiff Neck
-          </button>
-          <button
-            type="button"
-            id="C5"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: small; color: black"
-          >
-            Shoulder Discomfort
-          </button>
-        </div>
-      </div>
-
-      <!-- Fourth Part -->
-      <p style="position: absolute; margin-top: -415px; margin-left: 575px">
-        <a
-          class="btn btn-secondary"
-          data-bs-toggle="collapse"
-          href="#collapseExample4"
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          ><i class="bi bi-caret-down"></i>
-          Lower Body / Back
-        </a>
-      </p>
-
-      <div
-        class="collapse"
-        id="collapseExample4"
-        style="position: absolute; margin-top: -365px; margin-left: 590px"
-      >
-        <div>
-          <button
-            type="button"
-            id="D1"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: smaller; color: black"
-          >
-            Muscle Pain
-          </button>
-          <button
-            type="button"
-            id="D2"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: smaller; color: black"
-          >
-            Low Back Pain
-          </button>
-          <button
-            type="button"
-            id="D3"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: smaller; color: black"
-          >
-            Buttocks Pain
-          </button>
-          <button
-            type="button"
-            id="D4"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: smaller; color: black"
-          >
-            Leg Numbness
-          </button>
-          <button
-            type="button"
-            id="D5"
-            class="shadow-sm btn btn-outline-secondary"
-            style="width: auto; font-size: smaller; color: black"
-          >
-            Walking Abnormalities
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Disease Part -->
-    <div class="wrapper d-flex" id="disease_part">
-      <p style="font-weight: bolder; font-size: larger" id="disease_result">
-        Nothing clicked. Please click your symptoms.
-      </p>
-      <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
-    </div>
-
-    <!-- Solution Part -->
-    <div class="wrapper" id="solution_part">
-      <div class="d-flex">
-        <p style="font-weight: bolder; font-size: 1.5rem">
-          Solution <i class="bi bi-emoji-smile"></i> :
-        </p>
-        <p
-          style="
-            margin-top: 3px;
-            font-weight: bolder;
-            font-size: 1.3rem;
-            margin-left: 1rem;
-          "
-          id="solution_text"
-        ></p>
-      </div>
-      <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
-        Nearby Hospital:
-      </p>
-
-      <div class="d-flex">
-        <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
-          <div
-            id="map"
-            style="
-              width: 500px;
-              height: 400px;
-              margin-left: 5rem;
-              margin-top: 2rem;
-              margin-bottom: 2rem;
-              overflow: hidden;
-            "
-          ></div>
-
-          <div id="menu_wrap" class="bg_white">
-            <div class="option">
-              <div>
-                <form onsubmit="searchPlaces(); return false;">
-                  키워드 :
-                  <input
-                    type="text"
-                    value="율전동 병원"
-                    id="keyword"
-                    size="15"
-                  />
-                  <button type="submit">검색하기</button>
-                </form>
-              </div>
+    <div class =" wrapper symptoms">
+        <div class="container-fluid">
+        
+         <h3 class="smallWrapper">
+           Please select your symptoms!
+           <i class="bi bi-check2"></i>
+         </h3>
+         
+         <div class="row h-100">
+            <div class="col-md-6">
+                <div class="human-body" >
+                    <svg data-position="head" class="head" xmlns="http://www.w3.org/2000/svg" width="99.594" height="138.031" viewBox="0 0 56.594 95.031"><path d="M15.92 68.5l8.8 12.546 3.97 13.984-9.254-7.38-4.622-15.848zm27.1 0l-8.8 12.546-3.976 13.988 9.254-7.38 4.622-15.848zm6.11-27.775l.108-11.775-21.16-14.742L8.123 26.133 8.09 40.19l-3.24.215 1.462 9.732 5.208 1.81 2.36 11.63 9.72 11.018 10.856-.324 9.56-10.37 1.918-11.952 5.207-1.81 1.342-9.517zm-43.085-1.84l-.257-13.82L28.226 11.9l23.618 15.755-.216 10.37 4.976-17.085L42.556 2.376 25.49 0 10.803 3.673.002 24.415z"/></svg>
+                    <svg data-position="shoulder" class="shoulder" xmlns="http://www.w3.org/2000/svg" width="152.532" height="89.594" viewBox="0 0 109.532 46.594"><path d="M38.244-.004l1.98 9.232-11.653 2.857-7.474-2.637zm33.032 0l-1.98 9.232 11.653 2.857 7.474-2.637zm21.238 10.54l4.044-2.187 12.656 14 .07 5.33S92.76 10.66 92.515 10.535zm-1.285.58c-.008.28 17.762 18.922 17.762 18.922l.537 16.557-6.157-10.55L91.5 30.988 83.148 15.6zm-74.224-.58L12.962 8.35l-12.656 14-.062 5.325s16.52-17.015 16.764-17.14zm1.285.58C18.3 11.396.528 30.038.528 30.038L-.01 46.595l6.157-10.55 11.87-5.056L26.374 15.6z"/></svg>
+                    <svg data-position="arm" class="arm" xmlns="http://www.w3.org/2000/svg" width="204.344" height="167.25" viewBox="0 0 158.344 119.25"><path d="M21.12 56.5a1.678 1.678 0 0 1-.427.33l.935 8.224 12.977-13.89 1.2-8.958A168.2 168.2 0 0 0 21.12 56.5zm1.387 12.522l-18.07 48.91 5.757 1.333 19.125-39.44 3.518-22.047zm-5.278-18.96l2.638 18.74-17.2 46.023L.01 113.05l6.644-35.518zm118.015 6.44a1.678 1.678 0 0 0 .426.33l-.934 8.222-12.977-13.89-1.2-8.958A168.2 168.2 0 0 1 135.24 56.5zm-1.39 12.52l18.073 48.91-5.758 1.333-19.132-39.44-3.52-22.05zm5.28-18.96l-2.64 18.74 17.2 46.023 2.658-1.775-6.643-35.518zm-103.1-12.323a1.78 1.78 0 0 1 .407-.24l3.666-27.345L33.07.015l-7.258 10.58-6.16 37.04.566 4.973a151.447 151.447 0 0 1 15.808-14.87zm84.3 0a1.824 1.824 0 0 0-.407-.24l-3.666-27.345L123.3.015l7.258 10.58 6.16 37.04-.566 4.973a151.447 151.447 0 0 0-15.822-14.87zM22.288 8.832l-3.3 35.276-2.2-26.238zm111.79 0l3.3 35.276 2.2-26.238z"/></svg>
+                    <svg data-position="chest" class="chest" xmlns="http://www.w3.org/2000/svg" width="124.594" height="83.063" viewBox="-2 0 86.594 45.063"><path d="M19.32 0l-9.225 16.488-10.1 5.056 6.15 4.836 4.832 14.07 11.2 4.616 17.85-8.828-4.452-34.7zm47.934 0l9.225 16.488 10.1 5.056-6.15 4.836-4.833 14.07-11.2 4.616-17.844-8.828 4.45-34.7z"/></svg>
+                    <svg data-position="stomach" class="stomach" xmlns="http://www.w3.org/2000/svg" width="118.25" height="150.594" viewBox="0 0 75.25 107.594"><path d="M19.25 7.49l16.6-7.5-.5 12.16-14.943 7.662zm-10.322 8.9l6.9 3.848-.8-9.116zm5.617-8.732L1.32 2.15 6.3 15.6zm-8.17 9.267l9.015 5.514 1.54 11.028-8.795-5.735zm15.53 5.89l.332 8.662 12.286-2.665.664-11.826zm14.61 84.783L33.28 76.062l-.08-20.53-11.654-5.736-1.32 37.5zM22.735 35.64L22.57 46.3l11.787 3.166.166-16.657zm-14.16-5.255L16.49 35.9l1.1 11.25-8.8-7.06zm8.79 22.74l-9.673-7.28-.84 9.78L-.006 68.29l10.564 14.594 5.5.883 1.98-20.735zM56 7.488l-16.6-7.5.5 12.16 14.942 7.66zm10.32 8.9l-6.9 3.847.8-9.116zm-5.617-8.733L73.93 2.148l-4.98 13.447zm8.17 9.267l-9.015 5.514-1.54 11.03 8.8-5.736zm-15.53 5.89l-.332 8.662-12.285-2.665-.664-11.827zm-14.61 84.783l3.234-31.536.082-20.532 11.65-5.735 1.32 37.5zm13.78-71.957l.166 10.66-11.786 3.168-.166-16.657zm14.16-5.256l-7.915 5.514-1.1 11.25 8.794-7.06zm-8.79 22.743l9.673-7.28.84 9.78 6.862 12.66-10.564 14.597-5.5.883-1.975-20.74z"/></svg>
+                    <svg data-position="legs" class="legs" xmlns="http://www.w3.org/2000/svg" width="149.626" height="342.625" viewBox="0 0 102.626 286.625"><path d="M17.143 138.643l-.664 5.99 4.647 5.77 1.55 9.1 3.1 1.33 2.655-13.755 1.77-4.88-1.55-3.107zm20.582.444l-3.32 9.318-7.082 13.755 1.77 12.647 5.09-14.2 4.205-7.982zm-26.557-12.645l5.09 27.29-3.32-1.777-2.656 8.875zm22.795 42.374l-1.55 4.88-3.32 20.634-.442 27.51 4.65 26.847-.223-34.39 4.87-13.754.663-15.087zM23.34 181.24l1.106 41.267 8.853 33.28-9.628-4.55-16.045-57.8 5.533-36.384zm15.934 80.536l-.664 18.415-1.55 6.435h-4.647l-1.327-4.437-1.55-.222.332 4.437-5.864-1.778-1.55-.887-6.64-1.442-.22-5.214 6.418-10.87 4.426-5.548 10.844-4.437zM13.63 3.076v22.476l15.71 31.073 9.923 30.85L38.23 66.1zm25.49 30.248l.118-.148-.793-2.024L21.9 12.992l-1.242-.44L31.642 40.93zM32.865 44.09l6.812 17.6 2.274-21.596-1.344-3.43zM6.395 61.91l.827 25.34 12.816 35.257-3.928 10.136L3.5 88.133zM30.96 74.69l.345.826 6.47 15.48-4.177 38.342-6.594-3.526 5.715-35.7zm45.5 63.953l.663 5.99-4.647 5.77-1.55 9.1-3.1 1.33-2.655-13.755-1.77-4.88 1.55-3.107zm-20.582.444l3.32 9.318 7.08 13.755-1.77 12.647-5.09-14.2-4.2-7.987zm3.762 29.73l1.55 4.88 3.32 20.633.442 27.51-4.648 26.847.22-34.39-4.867-13.754-.67-15.087zm10.623 12.424l-1.107 41.267-8.852 33.28 9.627-4.55 16.046-57.8-5.533-36.384zM54.33 261.777l.663 18.415 1.546 6.435h4.648l1.328-4.437 1.55-.222-.333 4.437 5.863-1.778 1.55-.887 6.638-1.442.222-5.214-6.418-10.868-4.426-5.547-10.844-4.437zm25.643-258.7v22.476L64.26 56.625l-9.923 30.85L55.37 66.1zM54.48 33.326l-.118-.15.793-2.023L71.7 12.993l1.24-.44L61.96 40.93zm6.255 10.764l-6.812 17.6-2.274-21.595 1.344-3.43zm26.47 17.82l-.827 25.342-12.816 35.256 3.927 10.136 12.61-44.51zM62.64 74.693l-.346.825-6.47 15.48 4.178 38.342 6.594-3.527-5.715-35.7zm19.792 51.75l-5.09 27.29 3.32-1.776 2.655 8.875zM9.495-.007l.827 21.373-7.028 42.308-3.306-34.155zm2.068 27.323L26.24 59.707l3.307 26-6.2 36.58L9.91 85.046l-.827-38.342zM84.103-.01l-.826 21.375 7.03 42.308 3.306-34.155zm-2.066 27.325L67.36 59.707l-3.308 26 6.2 36.58 13.436-37.24.827-38.34z"/></svg>
+                    <svg data-position="hands" class="hands" xmlns="http://www.w3.org/2000/svg" width="248" height="81.938" viewBox="0 0 205 38.938"><path d="M21.255-.002l2.88 6.9 8.412 1.335.664 12.458-4.427 17.8-2.878-.22 2.8-11.847-2.99-.084-4.676 12.6-3.544-.446 4.4-12.736-3.072-.584-5.978 13.543-4.428-.445 6.088-14.1-2.1-1.25-7.528 12.012-3.764-.445L12.4 12.9l-1.107-1.78L.665 15.57 0 13.124l8.635-7.786zm162.49 0l-2.88 6.9-8.412 1.335-.664 12.458 4.427 17.8 2.878-.22-2.8-11.847 2.99-.084 4.676 12.6 3.544-.446-4.4-12.736 3.072-.584 5.978 13.543 4.428-.445-6.088-14.1 2.1-1.25 7.528 12.012 3.764-.445L192.6 12.9l1.107-1.78 10.628 4.45.665-2.447-8.635-7.786z"/></svg>
+                </div>
             </div>
-            <hr />
-            <ul id="placesList"></ul>
-            <div id="pagination"></div>
+           
+            <div class="col-md-6">
+                
+                <!-- First Part -->
+                <p style=" padding: 10px;">
+                    <a
+                      class="btn btn-secondary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      ><i class="bi bi-caret-down"></i>
+                      Mental Issues
+                    </a>
+                </p>
+            
+                <div
+                    class="collapse"
+                    id="collapseExample"
+                    style=" padding: 10px;"
+                >
+                    <div>
+                      <button
+                        type="button"
+                        id="A1"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Anxiety
+                      </button>
+                      <button
+                        type="button"
+                        id="A2"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Lethargy
+                      </button>
+                      <button
+                        type="button"
+                        id="A3"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Sleep disorder
+                      </button>
+                      <button
+                        type="button"
+                        id="A4"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Eating disorder
+                      </button>
+                      <button
+                        type="button"
+                        id="A5"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Sensory Abnormalities
+                      </button>
+                    </div>
+                </div>
+            
+                  <!-- Second Part -->
+                  <p style=" margin-top: 110px; margin-left: 10px">
+                    <a
+                      class="btn btn-secondary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      ><i class="bi bi-caret-down"></i>
+                      Head / Face
+                    </a>
+                  </p>
+            
+                  <div
+                    class="collapse"
+                    id="collapseExample2"
+                    style=" margin-top: 155px; margin-left: 15px"
+                  >
+                    <div>
+                      <button
+                        type="button"
+                        id="B1"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Fatigue
+                      </button>
+                      <button
+                        type="button"
+                        id="B2"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Headache
+                      </button>
+                      <button
+                        type="button"
+                        id="B3"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Migraine
+                      </button>
+                      <button
+                        type="button"
+                        id="B4"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Eye Strain
+                      </button>
+                      <button
+                        type="button"
+                        id="B5"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Excessive Tears
+                      </button>
+                    </div>
+                  </div>
+            
+                  <!-- Third Part -->
+                  <p style=" margin-top: 220px; margin-left: 10px">
+                    <a
+                      class="btn btn-secondary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      ><i class="bi bi-caret-down"></i>
+                      Upper Body
+                    </a>
+                  </p>
+            
+                  <div
+                    class="collapse"
+                    id="collapseExample3"
+                    style=" margin-top: 265px; margin-left: 15px"
+                  >
+                    <div>
+                      <button
+                        type="button"
+                        id="C1"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Finger Numbness
+                      </button>
+                      <button
+                        type="button"
+                        id="C2"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Wrist Pain
+                      </button>
+                      <button
+                        type="button"
+                        id="C3"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Arm Pain
+                      </button>
+                      <button
+                        type="button"
+                        id="C4"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Stiff Neck
+                      </button>
+                      <button
+                        type="button"
+                        id="C5"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: small; color: black"
+                      >
+                        Shoulder Discomfort
+                      </button>
+                    </div>
+                  </div>
+            
+                  <!-- Fourth Part -->
+                  <p style=" margin-top: 330px; margin-left: 10px">
+                    <a
+                      class="btn btn-secondary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      ><i class="bi bi-caret-down"></i>
+                      Lower Body / Back
+                    </a>
+                  </p>
+            
+                  <div
+                    class="collapse"
+                    id="collapseExample4"
+                    style=" margin-top: 375px; margin-left: 15px"
+                  >
+                    <div>
+                      <button
+                        type="button"
+                        id="D1"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: smaller; color: black"
+                      >
+                        Muscle Pain
+                      </button>
+                      <button
+                        type="button"
+                        id="D2"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: smaller; color: black"
+                      >
+                        Low Back Pain
+                      </button>
+                      <button
+                        type="button"
+                        id="D3"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: smaller; color: black"
+                      >
+                        Buttocks Pain
+                      </button>
+                      <button
+                        type="button"
+                        id="D4"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: smaller; color: black"
+                      >
+                        Leg Numbness
+                      </button>
+                      <button
+                        type="button"
+                        id="D5"
+                        class="shadow-sm btn btn-outline-secondary"
+                        style="width: auto; font-size: smaller; color: black"
+                      >
+                        Walking Abnormalities
+                      </button>
+                    </div>
+                  </div>
+            </div>
+         </div>
+        </div>
+    </div>  
+    </div>
+<!-- Disease Part -->
+<div class="wrapper d-flex" id="disease_part">
+    <p style="font-weight: bolder; font-size: larger" id="disease_result">
+      Nothing clicked. Please click your symptoms.
+    </p>
+    <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
+  </div>
+
+  <!-- Solution Part -->
+  <div class="wrapper" id="solution_part">
+    <div class="d-flex">
+      <p style="font-weight: bolder; font-size: 1.5rem">
+        Solution <i class="bi bi-emoji-smile"></i> :
+      </p>
+      <p
+        style="
+          margin-top: 3px;
+          font-weight: bolder;
+          font-size: 1.3rem;
+          margin-left: 1rem;
+        "
+        id="solution_text"
+      ></p>
+    </div>
+    <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
+      Nearby Hospital:
+    </p>
+
+    <div class="d-flex">
+      <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
+        <div
+          id="map"
+          style="
+            width: 500px;
+            height: 400px;
+            margin-left: 5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+          "
+        ></div>
+
+        <div id="menu_wrap" class="bg_white">
+          <div class="option">
+            <div>
+              <form onsubmit="searchPlaces(); return false;">
+                키워드 :
+                <input
+                  type="text"
+                  value="율전동 병원"
+                  id="keyword"
+                  size="15"
+                />
+                <button type="submit">검색하기</button>
+              </form>
+            </div>
           </div>
+          <hr />
+          <ul id="placesList"></ul>
+          <div id="pagination"></div>
         </div>
       </div>
-      <script
-        type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3bfc51f1d5ff3836367d5351ec01d5a&libraries=services"
-      ></script>
     </div>
-  </body>
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3bfc51f1d5ff3836367d5351ec01d5a&libraries=services"
+    ></script>
+  </div>
+</body> 
 
-  <script>
-    // calculate total number of clicked buttons
-    var sum = 0;
 
-    // check whether button is clicked or not
-    const Status = {
-      UnChecked: 0,
-      Checked: 1,
-    };
 
-    // information for the Disease
-    const Disease = {
-      Name: "",
-      Link: "",
-      Solution: "",
-    };
+<script>
 
-    // get each button element
-    let buttonA_1 = document.querySelector("#A1");
-    let buttonA_2 = document.querySelector("#A2");
-    let buttonA_3 = document.querySelector("#A3");
-    let buttonA_4 = document.querySelector("#A4");
-    let buttonA_5 = document.querySelector("#A5");
+// calculate total number of clicked buttons
+var sum = 0;
 
-    let buttonB_1 = document.querySelector("#B1");
-    let buttonB_2 = document.querySelector("#B2");
-    let buttonB_3 = document.querySelector("#B3");
-    let buttonB_4 = document.querySelector("#B4");
-    let buttonB_5 = document.querySelector("#B5");
+// check whether button is clicked or not
+const Status = {
+  UnChecked: 0,
+  Checked: 1,
+};
 
-    let buttonC_1 = document.querySelector("#C1");
-    let buttonC_2 = document.querySelector("#C2");
-    let buttonC_3 = document.querySelector("#C3");
-    let buttonC_4 = document.querySelector("#C4");
-    let buttonC_5 = document.querySelector("#C5");
+// information for the Disease
+const Disease = {
+  Name: "",
+  Link: "",
+  Solution: "",
+};
 
-    let buttonD_1 = document.querySelector("#D1");
-    let buttonD_2 = document.querySelector("#D2");
-    let buttonD_3 = document.querySelector("#D3");
-    let buttonD_4 = document.querySelector("#D4");
-    let buttonD_5 = document.querySelector("#D5");
+// get each button element
+let buttonA_1 = document.querySelector("#A1");
+let buttonA_2 = document.querySelector("#A2");
+let buttonA_3 = document.querySelector("#A3");
+let buttonA_4 = document.querySelector("#A4");
+let buttonA_5 = document.querySelector("#A5");
 
-    let buttonE_1 = document.querySelector("#E1");
-    let buttonE_2 = document.querySelector("#E2");
-    let buttonE_3 = document.querySelector("#E3");
-    let buttonE_4 = document.querySelector("#E4");
-    let buttonE_5 = document.querySelector("#E5");
+let buttonB_1 = document.querySelector("#B1");
+let buttonB_2 = document.querySelector("#B2");
+let buttonB_3 = document.querySelector("#B3");
+let buttonB_4 = document.querySelector("#B4");
+let buttonB_5 = document.querySelector("#B5");
 
-    // once clicked, change buttons status
-    function convertStatus(status, button) {
-      if (status == 0) {
-        sum++;
-        button.style.backgroundColor = "greenyellow"; // change button's background color
-        return Status.Checked;
-      } else if (status == 1) {
-        sum--;
-        button.style.backgroundColor = "white"; // change button's background color
-        return Status.UnChecked;
-      }
+let buttonC_1 = document.querySelector("#C1");
+let buttonC_2 = document.querySelector("#C2");
+let buttonC_3 = document.querySelector("#C3");
+let buttonC_4 = document.querySelector("#C4");
+let buttonC_5 = document.querySelector("#C5");
+
+let buttonD_1 = document.querySelector("#D1");
+let buttonD_2 = document.querySelector("#D2");
+let buttonD_3 = document.querySelector("#D3");
+let buttonD_4 = document.querySelector("#D4");
+let buttonD_5 = document.querySelector("#D5");
+
+let buttonE_1 = document.querySelector("#E1");
+let buttonE_2 = document.querySelector("#E2");
+let buttonE_3 = document.querySelector("#E3");
+let buttonE_4 = document.querySelector("#E4");
+let buttonE_5 = document.querySelector("#E5");
+
+// once clicked, change buttons status
+function convertStatus(status, button) {
+  if (status == 0) {
+    sum++;
+    button.style.backgroundColor = "greenyellow"; // change button's background color
+    return Status.Checked;
+  } else if (status == 1) {
+    sum--;
+    button.style.backgroundColor = "white"; // change button's background color
+    return Status.UnChecked;
+  }
+}
+
+// initialize the status of buttons
+var statusA_1 = Status.UnChecked;
+var statusA_2 = Status.UnChecked;
+var statusA_3 = Status.UnChecked;
+var statusA_4 = Status.UnChecked;
+var statusA_5 = Status.UnChecked;
+
+// when clicked
+buttonA_1.onclick = function () {
+  statusA_1 = convertStatus(statusA_1, this); // change button status
+  update_diseasePart(); // update disease part
+};
+buttonA_2.onclick = function () {
+  statusA_2 = convertStatus(statusA_2, this);
+  update_diseasePart();
+};
+buttonA_3.onclick = function () {
+  statusA_3 = convertStatus(statusA_3, this);
+  update_diseasePart();
+};
+buttonA_4.onclick = function () {
+  statusA_4 = convertStatus(statusA_4, this);
+  update_diseasePart();
+};
+buttonA_5.onclick = function () {
+  statusA_5 = convertStatus(statusA_5, this);
+  update_diseasePart();
+};
+
+var statusB_1 = Status.UnChecked;
+var statusB_2 = Status.UnChecked;
+var statusB_3 = Status.UnChecked;
+var statusB_4 = Status.UnChecked;
+var statusB_5 = Status.UnChecked;
+
+buttonB_1.onclick = function () {
+  statusB_1 = convertStatus(statusB_1, this);
+  update_diseasePart();
+};
+buttonB_2.onclick = function () {
+  statusB_2 = convertStatus(statusB_2, this);
+  update_diseasePart();
+};
+buttonB_3.onclick = function () {
+  statusB_3 = convertStatus(statusB_3, this);
+  update_diseasePart();
+};
+buttonB_4.onclick = function () {
+  statusB_4 = convertStatus(statusB_4, this);
+  update_diseasePart();
+};
+buttonB_5.onclick = function () {
+  statusB_5 = convertStatus(statusB_5, this);
+  update_diseasePart();
+};
+
+var statusC_1 = Status.UnChecked;
+var statusC_2 = Status.UnChecked;
+var statusC_3 = Status.UnChecked;
+var statusC_4 = Status.UnChecked;
+var statusC_5 = Status.UnChecked;
+
+buttonC_1.onclick = function () {
+  statusC_1 = convertStatus(statusC_1, this);
+  update_diseasePart();
+};
+buttonC_2.onclick = function () {
+  statusC_2 = convertStatus(statusC_2, this);
+  update_diseasePart();
+};
+buttonC_3.onclick = function () {
+  statusC_3 = convertStatus(statusC_3, this);
+  update_diseasePart();
+};
+buttonC_4.onclick = function () {
+  statusC_4 = convertStatus(statusC_4, this);
+  update_diseasePart();
+};
+buttonC_5.onclick = function () {
+  statusC_5 = convertStatus(statusC_5, this);
+  update_diseasePart();
+};
+
+var statusD_1 = Status.UnChecked;
+var statusD_2 = Status.UnChecked;
+var statusD_3 = Status.UnChecked;
+var statusD_4 = Status.UnChecked;
+var statusD_5 = Status.UnChecked;
+
+buttonD_1.onclick = function () {
+  statusD_1 = convertStatus(statusD_1, this);
+  update_diseasePart();
+};
+buttonD_2.onclick = function () {
+  statusD_2 = convertStatus(statusD_2, this);
+  update_diseasePart();
+};
+buttonD_3.onclick = function () {
+  statusD_3 = convertStatus(statusD_3, this);
+  update_diseasePart();
+};
+buttonD_4.onclick = function () {
+  statusD_4 = convertStatus(statusD_4, this);
+  update_diseasePart();
+};
+buttonD_5.onclick = function () {
+  statusD_5 = convertStatus(statusD_5, this);
+  update_diseasePart();
+};
+
+// function for update disease part.
+function update_diseasePart() {
+  // empty the disease text including the link (url)
+  let link = document.querySelector("#disease_part a");
+  link.textContent = "";
+
+  let solutionText = document.querySelector("#solution_text");
+  solutionText.textContent = "";
+
+  // get "disease part" element
+  let result = document.querySelector("#disease_result");
+
+  // codes in "if statement" are all possible cases
+  if (sum == 0) {
+    result.innerHTML = "Nothing clicked. Please click your symptoms.";
+    return;
+  }
+
+  if (sum == 5) {
+    if (statusB_1 && statusB_2 && statusB_3 && statusC_4 && statusC_5) {
+      result.innerHTML = "Disease:  "; // set text
+      Disease.Name = "Hypertension"; // give information(name) for Disease
+      Disease.Link = "https://en.wikipedia.org/wiki/Hypertension"; // give information(url) for Disease
+      Disease.Solution =
+        "Maintaining normal weight, reducing salty food and drinking, and physical activity.";
+      displayDisease(Disease); // use displayDisease function
+      displaySolution(Disease);
+    } else {
+      // out of case
+      result.innerHTML =
+        "Sorry, we cannot find such disease. Please report your disease to us :-)";
     }
-
-    // initialize the status of buttons
-    var statusA_1 = Status.UnChecked;
-    var statusA_2 = Status.UnChecked;
-    var statusA_3 = Status.UnChecked;
-    var statusA_4 = Status.UnChecked;
-    var statusA_5 = Status.UnChecked;
-
-    // when clicked
-    buttonA_1.onclick = function () {
-      statusA_1 = convertStatus(statusA_1, this); // change button status
-      update_diseasePart(); // update disease part
-    };
-    buttonA_2.onclick = function () {
-      statusA_2 = convertStatus(statusA_2, this);
-      update_diseasePart();
-    };
-    buttonA_3.onclick = function () {
-      statusA_3 = convertStatus(statusA_3, this);
-      update_diseasePart();
-    };
-    buttonA_4.onclick = function () {
-      statusA_4 = convertStatus(statusA_4, this);
-      update_diseasePart();
-    };
-    buttonA_5.onclick = function () {
-      statusA_5 = convertStatus(statusA_5, this);
-      update_diseasePart();
-    };
-
-    var statusB_1 = Status.UnChecked;
-    var statusB_2 = Status.UnChecked;
-    var statusB_3 = Status.UnChecked;
-    var statusB_4 = Status.UnChecked;
-    var statusB_5 = Status.UnChecked;
-
-    buttonB_1.onclick = function () {
-      statusB_1 = convertStatus(statusB_1, this);
-      update_diseasePart();
-    };
-    buttonB_2.onclick = function () {
-      statusB_2 = convertStatus(statusB_2, this);
-      update_diseasePart();
-    };
-    buttonB_3.onclick = function () {
-      statusB_3 = convertStatus(statusB_3, this);
-      update_diseasePart();
-    };
-    buttonB_4.onclick = function () {
-      statusB_4 = convertStatus(statusB_4, this);
-      update_diseasePart();
-    };
-    buttonB_5.onclick = function () {
-      statusB_5 = convertStatus(statusB_5, this);
-      update_diseasePart();
-    };
-
-    var statusC_1 = Status.UnChecked;
-    var statusC_2 = Status.UnChecked;
-    var statusC_3 = Status.UnChecked;
-    var statusC_4 = Status.UnChecked;
-    var statusC_5 = Status.UnChecked;
-
-    buttonC_1.onclick = function () {
-      statusC_1 = convertStatus(statusC_1, this);
-      update_diseasePart();
-    };
-    buttonC_2.onclick = function () {
-      statusC_2 = convertStatus(statusC_2, this);
-      update_diseasePart();
-    };
-    buttonC_3.onclick = function () {
-      statusC_3 = convertStatus(statusC_3, this);
-      update_diseasePart();
-    };
-    buttonC_4.onclick = function () {
-      statusC_4 = convertStatus(statusC_4, this);
-      update_diseasePart();
-    };
-    buttonC_5.onclick = function () {
-      statusC_5 = convertStatus(statusC_5, this);
-      update_diseasePart();
-    };
-
-    var statusD_1 = Status.UnChecked;
-    var statusD_2 = Status.UnChecked;
-    var statusD_3 = Status.UnChecked;
-    var statusD_4 = Status.UnChecked;
-    var statusD_5 = Status.UnChecked;
-
-    buttonD_1.onclick = function () {
-      statusD_1 = convertStatus(statusD_1, this);
-      update_diseasePart();
-    };
-    buttonD_2.onclick = function () {
-      statusD_2 = convertStatus(statusD_2, this);
-      update_diseasePart();
-    };
-    buttonD_3.onclick = function () {
-      statusD_3 = convertStatus(statusD_3, this);
-      update_diseasePart();
-    };
-    buttonD_4.onclick = function () {
-      statusD_4 = convertStatus(statusD_4, this);
-      update_diseasePart();
-    };
-    buttonD_5.onclick = function () {
-      statusD_5 = convertStatus(statusD_5, this);
-      update_diseasePart();
-    };
-
-    // function for update disease part.
-    function update_diseasePart() {
-      // empty the disease text including the link (url)
-      let link = document.querySelector("#disease_part a");
-      link.textContent = "";
-
-      let solutionText = document.querySelector("#solution_text");
-      solutionText.textContent = "";
-
-      // get "disease part" element
-      let result = document.querySelector("#disease_result");
-
-      // codes in "if statement" are all possible cases
-      if (sum == 0) {
-        result.innerHTML = "Nothing clicked. Please click your symptoms.";
-        return;
-      }
-
-      if (sum == 5) {
-        if (statusB_1 && statusB_2 && statusB_3 && statusC_4 && statusC_5) {
-          result.innerHTML = "Disease:  "; // set text
-          Disease.Name = "Hypertension"; // give information(name) for Disease
-          Disease.Link = "https://en.wikipedia.org/wiki/Hypertension"; // give information(url) for Disease
-          Disease.Solution =
-            "Maintaining normal weight, reducing salty food and drinking, and physical activity.";
-          displayDisease(Disease); // use displayDisease function
-          displaySolution(Disease);
-        } else {
-          // out of case
-          result.innerHTML =
-            "Sorry, we cannot find such disease. Please report your disease to us :-)";
-        }
-      } else if (sum == 4) {
-        if (statusB_1 && statusB_2 && statusC_4 && statusC_5) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Turtle neck syndrome";
-          Disease.Link = "https://sebarun.com/en/info/page41.php";
-          displayDisease(Disease);
-        } else if (statusA_3 && statusA_4 && statusB_1 && statusD_1) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Chronic Fatigue Syndrome";
-          Disease.Link =
-            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
-          displayDisease(Disease);
-        } else if (statusA_1 && statusA_3 && statusA_4 && statusB_1) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Insomnia";
-          Disease.Link = "https://en.wikipedia.org/wiki/Insomnia";
-          displayDisease(Disease);
-        } else if (statusA_2 && statusA_3 && statusA_4 && statusB_1) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Depressive disorder";
-          Disease.Link =
-            "https://en.wikipedia.org/wiki/Mood_disorder#Depressive_disorders";
-          displayDisease(Disease);
-        } else {
-          result.innerHTML =
-            "Sorry, we cannot find such disease. Please report your disease to us :-)";
-        }
-      } else if (sum == 3) {
-        if (statusB_1 && statusC_4 && statusC_5) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Turtle neck syndrome";
-          Disease.Link = "https://sebarun.com/en/info/page41.php";
-          displayDisease(Disease);
-        } else if (statusA_3 && statusA_4 && statusB_1) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Chronic Fatigue Syndrome";
-          Disease.Link =
-            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
-          displayDisease(Disease);
-        } else if (statusD_2 && statusD_3 && statusD_4) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Herniation of intervertebral disk";
-          Disease.Link =
-            "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
-          displayDisease(Disease);
-        } else if (statusA_5 && statusC_1 && statusC_2) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Carpal tunnel syndrome";
-          Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
-          displayDisease(Disease);
-        } else {
-          result.innerHTML =
-            "Sorry, we cannot find such disease. Please report your disease to us :-)";
-        }
-      } else if (sum == 2) {
-        if (statusC_4 && statusC_5) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Turtle neck syndrome";
-          Disease.Link = "https://sebarun.com/en/info/page41.php";
-          displayDisease(Disease);
-        } else if (statusA_3 && statusB_1) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Chronic Fatigue Syndrome";
-          Disease.Link =
-            "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
-          displayDisease(Disease);
-        } else if (statusC_1 && statusC_2) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Carpal tunnel syndrome";
-          Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
-          displayDisease(Disease);
-        } else if (statusD_2 && statusD_3) {
-          result.innerHTML =
-            "Possible Disease (Click more sysmptoms for better prediction):  ";
-          Disease.Name = "Herniation of intervertebral disk ";
-          Disease.Link =
-            "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
-          displayDisease(Disease);
-        } else if (statusB_4 && statusB_5) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Dry eye syndrome";
-          Disease.Link = "https://en.wikipedia.org/wiki/Dry_eye_syndrome";
-          displayDisease(Disease);
-        } else if (statusA_2 && statusB_1) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Fatigue";
-          Disease.Link = "https://en.wikipedia.org/wiki/Fatigue";
-          displayDisease(Disease);
-        } else if (statusD_4 && statusD_5) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Spondylopathy";
-          Disease.Link = "https://en.wikipedia.org/wiki/Spondylopathy";
-          displayDisease(Disease);
-        } else {
-          result.innerHTML =
-            "Sorry, we cannot find such disease. Please report your disease to us :-)";
-        }
-      } else if (sum == 1) {
-        if (statusA_4) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Eating disorder";
-          Disease.Link = "https://en.wikipedia.org/wiki/Eating_disorder";
-          displayDisease(Disease);
-        } else if (statusC_5) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Shoulder Discomfort";
-          Disease.Link = "https://en.wikipedia.org/wiki/Shoulder_problem";
-          displayDisease(Disease);
-        } else if (statusB_4) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Eye Strain";
-          Disease.Link = "https://en.wikipedia.org/wiki/Eye_strain";
-          displayDisease(Disease);
-        } else if (statusD_2) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Low Back Pain";
-          Disease.Link = "https://en.wikipedia.org/wiki/Low_back_pain";
-          displayDisease(Disease);
-        } else if (statusD_1) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Muscle Pain(Myalgia)";
-          Disease.Link = "https://en.wikipedia.org/wiki/Myalgia";
-          displayDisease(Disease);
-        } else if (statusC_2) {
-          result.innerHTML = "Disease:  ";
-          Disease.Name = "Wrist Pain";
-          Disease.Link = "https://en.wikipedia.org/wiki/Wrist_pain";
-          displayDisease(Disease);
-        } else {
-          result.innerHTML =
-            "Please check more symptoms for better prediction.";
-        }
-      } else {
-        // out of case
-        result.innerHTML =
-          "Sorry, we cannot find such disease. Please report your disease to us :-)";
-      }
+  } else if (sum == 4) {
+    if (statusB_1 && statusB_2 && statusC_4 && statusC_5) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Turtle neck syndrome";
+      Disease.Link = "https://sebarun.com/en/info/page41.php";
+      displayDisease(Disease);
+    } else if (statusA_3 && statusA_4 && statusB_1 && statusD_1) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Chronic Fatigue Syndrome";
+      Disease.Link =
+        "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      displayDisease(Disease);
+    } else if (statusA_1 && statusA_3 && statusA_4 && statusB_1) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Insomnia";
+      Disease.Link = "https://en.wikipedia.org/wiki/Insomnia";
+      displayDisease(Disease);
+    } else if (statusA_2 && statusA_3 && statusA_4 && statusB_1) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Depressive disorder";
+      Disease.Link =
+        "https://en.wikipedia.org/wiki/Mood_disorder#Depressive_disorders";
+      displayDisease(Disease);
+    } else {
+      result.innerHTML =
+        "Sorry, we cannot find such disease. Please report your disease to us :-)";
     }
-
-    // function for display Disease in "Disease Part"
-    function displayDisease(Disease_Detail) {
-      // get element
-      let link = document.querySelector("#disease_part a");
-
-      link.removeAttribute("href"); // remove existing url
-
-      // set new url
-      link.href = Disease_Detail.Link;
-
-      // open new tab when clicked
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-
-      // set name
-      link.textContent = Disease_Detail.Name;
+  } else if (sum == 3) {
+    if (statusB_1 && statusC_4 && statusC_5) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Turtle neck syndrome";
+      Disease.Link = "https://sebarun.com/en/info/page41.php";
+      displayDisease(Disease);
+    } else if (statusA_3 && statusA_4 && statusB_1) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Chronic Fatigue Syndrome";
+      Disease.Link =
+        "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      displayDisease(Disease);
+    } else if (statusD_2 && statusD_3 && statusD_4) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Herniation of intervertebral disk";
+      Disease.Link =
+        "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+      displayDisease(Disease);
+    } else if (statusA_5 && statusC_1 && statusC_2) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Carpal tunnel syndrome";
+      Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+      displayDisease(Disease);
+    } else {
+      result.innerHTML =
+        "Sorry, we cannot find such disease. Please report your disease to us :-)";
     }
-
-    function displaySolution(Disease_Detail) {
-      let solutionText = document.querySelector("#solution_text");
-
-      solution_text.textContent = Disease_Detail.Solution;
+  } else if (sum == 2) {
+    if (statusC_4 && statusC_5) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Turtle neck syndrome";
+      Disease.Link = "https://sebarun.com/en/info/page41.php";
+      displayDisease(Disease);
+    } else if (statusA_3 && statusB_1) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Chronic Fatigue Syndrome";
+      Disease.Link =
+        "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      displayDisease(Disease);
+    } else if (statusC_1 && statusC_2) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Carpal tunnel syndrome";
+      Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+      displayDisease(Disease);
+    } else if (statusD_2 && statusD_3) {
+      result.innerHTML =
+        "Possible Disease (Click more sysmptoms for better prediction):  ";
+      Disease.Name = "Herniation of intervertebral disk ";
+      Disease.Link =
+        "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+      displayDisease(Disease);
+    } else if (statusB_4 && statusB_5) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Dry eye syndrome";
+      Disease.Link = "https://en.wikipedia.org/wiki/Dry_eye_syndrome";
+      displayDisease(Disease);
+    } else if (statusA_2 && statusB_1) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Fatigue";
+      Disease.Link = "https://en.wikipedia.org/wiki/Fatigue";
+      displayDisease(Disease);
+    } else if (statusD_4 && statusD_5) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Spondylopathy";
+      Disease.Link = "https://en.wikipedia.org/wiki/Spondylopathy";
+      displayDisease(Disease);
+    } else {
+      result.innerHTML =
+        "Sorry, we cannot find such disease. Please report your disease to us :-)";
     }
-  </script>
-  <script>
-    var markers = [];
+  } else if (sum == 1) {
+    if (statusA_4) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Eating disorder";
+      Disease.Link = "https://en.wikipedia.org/wiki/Eating_disorder";
+      displayDisease(Disease);
+    } else if (statusC_5) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Shoulder Discomfort";
+      Disease.Link = "https://en.wikipedia.org/wiki/Shoulder_problem";
+      displayDisease(Disease);
+    } else if (statusB_4) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Eye Strain";
+      Disease.Link = "https://en.wikipedia.org/wiki/Eye_strain";
+      displayDisease(Disease);
+    } else if (statusD_2) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Low Back Pain";
+      Disease.Link = "https://en.wikipedia.org/wiki/Low_back_pain";
+      displayDisease(Disease);
+    } else if (statusD_1) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Muscle Pain(Myalgia)";
+      Disease.Link = "https://en.wikipedia.org/wiki/Myalgia";
+      displayDisease(Disease);
+    } else if (statusC_2) {
+      result.innerHTML = "Disease:  ";
+      Disease.Name = "Wrist Pain";
+      Disease.Link = "https://en.wikipedia.org/wiki/Wrist_pain";
+      displayDisease(Disease);
+    } else {
+      result.innerHTML =
+        "Please check more symptoms for better prediction.";
+    }
+  } else {
+    // out of case
+    result.innerHTML =
+      "Sorry, we cannot find such disease. Please report your disease to us :-)";
+  }
+}
 
-    var mapContainer = document.getElementById("map"),
-      mapOption = {
-        center: new kakao.maps.LatLng(37.566826, 126.9786567),
-        level: 3,
+// function for display Disease in "Disease Part"
+function displayDisease(Disease_Detail) {
+  // get element
+  let link = document.querySelector("#disease_part a");
+
+  link.removeAttribute("href"); // remove existing url
+
+  // set new url
+  link.href = Disease_Detail.Link;
+
+  // open new tab when clicked
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+
+  // set name
+  link.textContent = Disease_Detail.Name;
+}
+
+function displaySolution(Disease_Detail) {
+  let solutionText = document.querySelector("#solution_text");
+
+  solution_text.textContent = Disease_Detail.Solution;
+}
+</script>
+<script>
+var markers = [];
+
+var mapContainer = document.getElementById("map"),
+  mapOption = {
+    center: new kakao.maps.LatLng(37.566826, 126.9786567),
+    level: 3,
+  };
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
+
+var ps = new kakao.maps.services.Places();
+
+var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
+
+searchPlaces();
+
+function searchPlaces() {
+  var keyword = document.getElementById("keyword").value;
+
+  if (!keyword.replace(/^\s+|\s+$/g, "")) {
+    alert("키워드를 입력해주세요!");
+    return false;
+  }
+
+  ps.keywordSearch(keyword, placesSearchCB);
+}
+
+function placesSearchCB(data, status, pagination) {
+  if (status === kakao.maps.services.Status.OK) {
+    displayPlaces(data);
+
+    displayPagination(pagination);
+  } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+    alert("검색 결과가 존재하지 않습니다.");
+    return;
+  } else if (status === kakao.maps.services.Status.ERROR) {
+    alert("검색 결과 중 오류가 발생했습니다.");
+    return;
+  }
+}
+
+function displayPlaces(places) {
+  var listEl = document.getElementById("placesList"),
+    menuEl = document.getElementById("menu_wrap"),
+    fragment = document.createDocumentFragment(),
+    bounds = new kakao.maps.LatLngBounds(),
+    listStr = "";
+
+  removeAllChildNods(listEl);
+
+  removeMarker();
+
+  for (var i = 0; i < places.length; i++) {
+    var placePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
+      marker = addMarker(placePosition, i),
+      itemEl = getListItem(i, places[i]);
+
+    bounds.extend(placePosition);
+
+    (function (marker, title) {
+      kakao.maps.event.addListener(marker, "mouseover", function () {
+        displayInfowindow(marker, title);
+      });
+
+      kakao.maps.event.addListener(marker, "mouseout", function () {
+        infowindow.close();
+      });
+
+      itemEl.onmouseover = function () {
+        displayInfowindow(marker, title);
       };
 
-    var map = new kakao.maps.Map(mapContainer, mapOption);
+      itemEl.onmouseout = function () {
+        infowindow.close();
+      };
+    })(marker, places[i].place_name);
 
-    var ps = new kakao.maps.services.Places();
+    fragment.appendChild(itemEl);
+  }
 
-    var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
+  listEl.appendChild(fragment);
+  menuEl.scrollTop = 0;
 
-    searchPlaces();
+  map.setBounds(bounds);
+}
 
-    function searchPlaces() {
-      var keyword = document.getElementById("keyword").value;
+function getListItem(index, places) {
+  var el = document.createElement("li"),
+    itemStr =
+      '<span class="markerbg marker_' +
+      (index + 1) +
+      '"></span>' +
+      '<div class="info">' +
+      "   <h5>" +
+      places.place_name +
+      "</h5>";
 
-      if (!keyword.replace(/^\s+|\s+$/g, "")) {
-        alert("키워드를 입력해주세요!");
-        return false;
-      }
+  if (places.road_address_name) {
+    itemStr +=
+      "    <span>" +
+      places.road_address_name +
+      "</span>" +
+      '   <span class="jibun gray">' +
+      places.address_name +
+      "</span>";
+  } else {
+    itemStr += "    <span>" + places.address_name + "</span>";
+  }
 
-      ps.keywordSearch(keyword, placesSearchCB);
+  itemStr += '  <span class="tel">' + places.phone + "</span>" + "</div>";
+
+  el.innerHTML = itemStr;
+  el.className = "item";
+
+  return el;
+}
+
+function addMarker(position, idx, title) {
+  var imageSrc =
+      "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png",
+    imageSize = new kakao.maps.Size(36, 37),
+    imgOptions = {
+      spriteSize: new kakao.maps.Size(36, 691),
+      spriteOrigin: new kakao.maps.Point(0, idx * 46 + 10),
+      offset: new kakao.maps.Point(13, 37),
+    },
+    markerImage = new kakao.maps.MarkerImage(
+      imageSrc,
+      imageSize,
+      imgOptions
+    ),
+    marker = new kakao.maps.Marker({
+      position: position,
+      image: markerImage,
+    });
+
+  marker.setMap(map);
+  markers.push(marker);
+
+  return marker;
+}
+
+function removeMarker() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers = [];
+}
+
+function displayPagination(pagination) {
+  var paginationEl = document.getElementById("pagination"),
+    fragment = document.createDocumentFragment(),
+    i;
+
+  while (paginationEl.hasChildNodes()) {
+    paginationEl.removeChild(paginationEl.lastChild);
+  }
+
+  for (i = 1; i <= pagination.last; i++) {
+    var el = document.createElement("a");
+    el.href = "#";
+    el.innerHTML = i;
+
+    if (i === pagination.current) {
+      el.className = "on";
+    } else {
+      el.onclick = (function (i) {
+        return function () {
+          pagination.gotoPage(i);
+        };
+      })(i);
     }
 
-    function placesSearchCB(data, status, pagination) {
-      if (status === kakao.maps.services.Status.OK) {
-        displayPlaces(data);
+    fragment.appendChild(el);
+  }
+  paginationEl.appendChild(fragment);
+}
 
-        displayPagination(pagination);
-      } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
-        alert("검색 결과가 존재하지 않습니다.");
-        return;
-      } else if (status === kakao.maps.services.Status.ERROR) {
-        alert("검색 결과 중 오류가 발생했습니다.");
-        return;
-      }
-    }
+function displayInfowindow(marker, title) {
+  var content = '<div style="padding:5px;z-index:1;">' + title + "</div>";
 
-    function displayPlaces(places) {
-      var listEl = document.getElementById("placesList"),
-        menuEl = document.getElementById("menu_wrap"),
-        fragment = document.createDocumentFragment(),
-        bounds = new kakao.maps.LatLngBounds(),
-        listStr = "";
+  infowindow.setContent(content);
+  infowindow.open(map, marker);
+}
 
-      removeAllChildNods(listEl);
-
-      removeMarker();
-
-      for (var i = 0; i < places.length; i++) {
-        var placePosition = new kakao.maps.LatLng(places[i].y, places[i].x),
-          marker = addMarker(placePosition, i),
-          itemEl = getListItem(i, places[i]);
-
-        bounds.extend(placePosition);
-
-        (function (marker, title) {
-          kakao.maps.event.addListener(marker, "mouseover", function () {
-            displayInfowindow(marker, title);
-          });
-
-          kakao.maps.event.addListener(marker, "mouseout", function () {
-            infowindow.close();
-          });
-
-          itemEl.onmouseover = function () {
-            displayInfowindow(marker, title);
-          };
-
-          itemEl.onmouseout = function () {
-            infowindow.close();
-          };
-        })(marker, places[i].place_name);
-
-        fragment.appendChild(itemEl);
-      }
-
-      listEl.appendChild(fragment);
-      menuEl.scrollTop = 0;
-
-      map.setBounds(bounds);
-    }
-
-    function getListItem(index, places) {
-      var el = document.createElement("li"),
-        itemStr =
-          '<span class="markerbg marker_' +
-          (index + 1) +
-          '"></span>' +
-          '<div class="info">' +
-          "   <h5>" +
-          places.place_name +
-          "</h5>";
-
-      if (places.road_address_name) {
-        itemStr +=
-          "    <span>" +
-          places.road_address_name +
-          "</span>" +
-          '   <span class="jibun gray">' +
-          places.address_name +
-          "</span>";
-      } else {
-        itemStr += "    <span>" + places.address_name + "</span>";
-      }
-
-      itemStr += '  <span class="tel">' + places.phone + "</span>" + "</div>";
-
-      el.innerHTML = itemStr;
-      el.className = "item";
-
-      return el;
-    }
-
-    function addMarker(position, idx, title) {
-      var imageSrc =
-          "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png",
-        imageSize = new kakao.maps.Size(36, 37),
-        imgOptions = {
-          spriteSize: new kakao.maps.Size(36, 691),
-          spriteOrigin: new kakao.maps.Point(0, idx * 46 + 10),
-          offset: new kakao.maps.Point(13, 37),
-        },
-        markerImage = new kakao.maps.MarkerImage(
-          imageSrc,
-          imageSize,
-          imgOptions
-        ),
-        marker = new kakao.maps.Marker({
-          position: position,
-          image: markerImage,
-        });
-
-      marker.setMap(map);
-      markers.push(marker);
-
-      return marker;
-    }
-
-    function removeMarker() {
-      for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(null);
-      }
-      markers = [];
-    }
-
-    function displayPagination(pagination) {
-      var paginationEl = document.getElementById("pagination"),
-        fragment = document.createDocumentFragment(),
-        i;
-
-      while (paginationEl.hasChildNodes()) {
-        paginationEl.removeChild(paginationEl.lastChild);
-      }
-
-      for (i = 1; i <= pagination.last; i++) {
-        var el = document.createElement("a");
-        el.href = "#";
-        el.innerHTML = i;
-
-        if (i === pagination.current) {
-          el.className = "on";
-        } else {
-          el.onclick = (function (i) {
-            return function () {
-              pagination.gotoPage(i);
-            };
-          })(i);
+function removeAllChildNods(el) {
+  while (el.hasChildNodes()) {
+    el.removeChild(el.lastChild);
+  }
+}
+/*human body*/
+window.onload = function () {
+    const pieces = document.getElementsByTagName('svg');
+    for (var i = 0; pieces.length; i++) {
+        let _piece = pieces[i];
+        _piece.onclick = function(t) {
+            if (t.target.getAttribute('data-position') != null) document.getElementById('data').innerHTML = t.target.getAttribute('data-position');
+            if (t.target.parentElement.getAttribute('data-position') != null) document.getElementById('data').innerHTML = t.target.parentElement.getAttribute('data-position');
         }
-
-        fragment.appendChild(el);
-      }
-      paginationEl.appendChild(fragment);
     }
-
-    function displayInfowindow(marker, title) {
-      var content = '<div style="padding:5px;z-index:1;">' + title + "</div>";
-
-      infowindow.setContent(content);
-      infowindow.open(map, marker);
-    }
-
-    function removeAllChildNods(el) {
-      while (el.hasChildNodes()) {
-        el.removeChild(el.lastChild);
-      }
-    }
-  </script>
+}
+</script>
 </html>
