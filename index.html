@@ -483,48 +483,50 @@
          </div>
         </div>
     </div>  
-    </div>
- <!-- Disease Part -->
- <div class="wrapper d-flex" id="disease_part">
-  <p style="font-weight: bolder; font-size: larger" id="disease_result">
-    Nothing clicked. Please click your symptoms.
-  </p>
-  <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
-</div>
+    
+    <!-- Disease Part -->
+      <div class="wrapper d-flex" id="disease_part">
+        <p style="font-weight: bolder; font-size: larger" id="disease_result">
+          Nothing clicked. Please click your symptoms.
+        </p>
+        <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
+      </div>
 
-<!-- Solution Part -->
-<div class="wrapper" id="solution_part">
-  <div class="d-flex">
-    <p style="font-weight: bolder; font-size: 1.5rem">
-      Solution <i class="bi bi-emoji-smile"></i> :
-    </p>
-    <p
-      style="
-        margin-top: 3px;
-        font-weight: bolder;
-        font-size: 1.3rem;
-        margin-left: 1rem;
-      "
-      id="solution_text"
-    ></p>
-  </div>
-  <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
-    Nearby Hospital:
-  </p>
+    <!-- Solution Part -->
+      <div class="wrapper" id="solution_part">
+        <div class="d-flex">
+          <p style="font-weight: bolder; font-size: 1.5rem">
+            Solution <i class="bi bi-emoji-smile"></i> :
+          </p>
+          <p
+            style="
+            margin-top: 3px;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            margin-left: 1rem;
+           "
+           id="solution_text"
+           >
+          </p>
+        </div>
+        <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
+          Nearby Hospital:
+       </p>
 
-  <div class="d-flex">
-    <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
-      <div
-        id="map"
-        style="
-          width: 500px;
-          height: 400px;
-          margin-left: 5rem;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
-          overflow: hidden;
-        "
-      ></div>
+       <div class="d-flex">
+         <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
+           <div
+             id="map"
+             style="
+             width: 500px;
+             height: 400px;
+             margin-left: 5rem;
+             margin-top: 2rem;
+             margin-bottom: 2rem;
+             overflow: hidden;
+             "
+             >
+            </div>
 
       <div id="menu_wrap" class="bg_white">
         <div class="option">
@@ -551,9 +553,14 @@
     type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3bfc51f1d5ff3836367d5351ec01d5a&libraries=services"
   ></script>
-</div>
-</body>
-
+   </div>
+  
+   <div class="footer">
+    <p>Disclaimer: This is just for diagonosis of self treatable common illness. Please see an actual doctor in case of serious illness and do not try to self medicate.</p>
+  </div>
+  
+  </body>
+  
 <script>
 // calculate total number of clicked buttons
 var sum = 0;
@@ -749,13 +756,13 @@ function update_diseasePart() {
       Disease.Name = "Hypertension"; // give information(name) for Disease
       Disease.Link = "https://en.wikipedia.org/wiki/Hypertension"; // give information(url) for Disease
       Disease.Solution =
-        "Maintaining normal weight, Reducing salty food and drinking, More physical activity";
+        "Maintaining normal weight, Reducing salty food and drinks, More physical activity";
       displayDisease(Disease); // use displayDisease function
       displaySolution(Disease);
     } else {
       // out of case
       result.innerHTML =
-        "Sorry, we cannot find such disease. Please report your disease to us :-)";
+        "Sorry, we cannot find such disease. Please visit a doctor :-)";
     }
   } else if (sum == 4) {
     if (statusB_1 && statusB_2 && statusC_4 && statusC_5) {
@@ -1229,10 +1236,5 @@ $(document).ready(function(){
   })      
 
 
-
-
-
- 
-
-</script>
+ </script>
 </html>
