@@ -1,4 +1,15 @@
-# TeamProject_Group15\
+# TeamProject_Group15
+
+**Find your disease website**
+
+This website helps a user determine the disease or condition they might have based on the symptoms they have. 
+A user selects the part of the body where they have the symptoms and then selects the symptoms they have from the drop down.
+Based on their symptoms, the website tells them the disease they might have and provides a link for more information about that disease.
+It also suggests some solutions to tackle the disease.
+The website also has a feature that allows a user to search for hostpitals and displays the location on a map.
+
+
+
 
 ## Types of diseases
 

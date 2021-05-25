@@ -1,6 +1,8 @@
   body {
     background: white;
     font-family: "Segoe UI";
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
   }
   
   .container {
