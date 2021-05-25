@@ -52,13 +52,19 @@
       }
       #menu_wrap hr {
         display: block;
-        height: 2px;
+        height: 1px;
         border: 0;
         border-top: 2px solid #5f5f5f;
         margin: 3px 0;
       }
       #menu_wrap .option {
         text-align: center;
+      }
+      #menu_wrap .option p {
+        margin: 10px 0;
+      }
+      #menu_wrap .option button {
+        margin-left: 5px;
       }
       #placesList li {
         list-style: none;
@@ -165,8 +171,8 @@
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- sylesheet -->
-    <script src="kakaoMpa.js"></script>
+    <!-- sylesheet
+    <script src="kakaoMpa.js"></script>-->
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -196,7 +202,7 @@
       </div>
     </nav>
 
-    <div class =" wrapper symptoms">
+    <div class ="wrapper" id= "symptoms">
         <div class="container-fluid">
         
          <h3 class="smallWrapper">
@@ -204,7 +210,7 @@
            <i class="bi bi-check2"></i>
          </h3>
          
-         <div class="row h-100">
+         <div class="row">
             <div class="col-md-6">
                 <div class="human-body" >
                     <svg data-position="head" class="head" xmlns="http://www.w3.org/2000/svg" width="99.594" height="138.031" viewBox="0 0 56.594 95.031"><path d="M15.92 68.5l8.8 12.546 3.97 13.984-9.254-7.38-4.622-15.848zm27.1 0l-8.8 12.546-3.976 13.988 9.254-7.38 4.622-15.848zm6.11-27.775l.108-11.775-21.16-14.742L8.123 26.133 8.09 40.19l-3.24.215 1.462 9.732 5.208 1.81 2.36 11.63 9.72 11.018 10.856-.324 9.56-10.37 1.918-11.952 5.207-1.81 1.342-9.517zm-43.085-1.84l-.257-13.82L28.226 11.9l23.618 15.755-.216 10.37 4.976-17.085L42.556 2.376 25.49 0 10.803 3.673.002 24.415z"/></svg>
@@ -220,14 +226,15 @@
             <div class="col-md-6">
                 
                 <!-- First Part -->
-                <p style=" padding: 10px;">
+                <p ">
                     <a
                       class="btn btn-secondary"
+                      id="A"
                       data-bs-toggle="collapse"
-                      href="#collapseExample"
+                      href="#collapseExample1"
                       role="button"
                       aria-expanded="false"
-                      aria-controls="collapseExample"
+                      aria-controls="collapseExample1"
                       ><i class="bi bi-caret-down"></i>
                       Mental Issues
                     </a>
@@ -235,8 +242,8 @@
             
                 <div
                     class="collapse"
-                    id="collapseExample"
-                    style=" padding: 10px;"
+                    id="collapseExample1"
+                    
                 >
                     <div>
                       <button
@@ -283,9 +290,10 @@
                 </div>
             
                   <!-- Second Part -->
-                  <p style=" margin-top: 110px; margin-left: 10px">
+                  <p style="margin-top: 80px;">
                     <a
                       class="btn btn-secondary"
+                      id="B"
                       data-bs-toggle="collapse"
                       href="#collapseExample2"
                       role="button"
@@ -299,7 +307,6 @@
                   <div
                     class="collapse"
                     id="collapseExample2"
-                    style=" margin-top: 155px; margin-left: 15px"
                   >
                     <div>
                       <button
@@ -346,9 +353,10 @@
                   </div>
             
                   <!-- Third Part -->
-                  <p style=" margin-top: 220px; margin-left: 10px">
+                  <p style=" margin-top: 80px">
                     <a
                       class="btn btn-secondary"
+                      id="B"
                       data-bs-toggle="collapse"
                       href="#collapseExample3"
                       role="button"
@@ -362,7 +370,7 @@
                   <div
                     class="collapse"
                     id="collapseExample3"
-                    style=" margin-top: 265px; margin-left: 15px"
+                    
                   >
                     <div>
                       <button
@@ -409,9 +417,10 @@
                   </div>
             
                   <!-- Fourth Part -->
-                  <p style=" margin-top: 330px; margin-left: 10px">
+                  <p style=" margin-top: 80px;">
                     <a
                       class="btn btn-secondary"
+                      id="D"
                       data-bs-toggle="collapse"
                       href="#collapseExample4"
                       role="button"
@@ -425,7 +434,7 @@
                   <div
                     class="collapse"
                     id="collapseExample4"
-                    style=" margin-top: 375px; margin-left: 15px"
+                    
                   >
                     <div>
                       <button
@@ -475,80 +484,77 @@
         </div>
     </div>  
     </div>
-<!-- Disease Part -->
-<div class="wrapper d-flex" id="disease_part">
-    <p style="font-weight: bolder; font-size: larger" id="disease_result">
-      Nothing clicked. Please click your symptoms.
+ <!-- Disease Part -->
+ <div class="wrapper d-flex" id="disease_part">
+  <p style="font-weight: bolder; font-size: larger" id="disease_result">
+    Nothing clicked. Please click your symptoms.
+  </p>
+  <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
+</div>
+
+<!-- Solution Part -->
+<div class="wrapper" id="solution_part">
+  <div class="d-flex">
+    <p style="font-weight: bolder; font-size: 1.5rem">
+      Solution <i class="bi bi-emoji-smile"></i> :
     </p>
-    <a style="font-weight: bolder; font-size: larger; margin-left: 1rem"></a>
+    <p
+      style="
+        margin-top: 3px;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+      "
+      id="solution_text"
+    ></p>
   </div>
+  <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
+    Nearby Hospital:
+  </p>
 
-  <!-- Solution Part -->
-  <div class="wrapper" id="solution_part">
-    <div class="d-flex">
-      <p style="font-weight: bolder; font-size: 1.5rem">
-        Solution <i class="bi bi-emoji-smile"></i> :
-      </p>
-      <p
+  <div class="d-flex">
+    <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
+      <div
+        id="map"
         style="
-          margin-top: 3px;
-          font-weight: bolder;
-          font-size: 1.3rem;
-          margin-left: 1rem;
+          width: 500px;
+          height: 400px;
+          margin-left: 5rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          overflow: hidden;
         "
-        id="solution_text"
-      ></p>
-    </div>
-    <p style="font-weight: bolder; font-size: 1.5rem; margin-top: 2rem">
-      Nearby Hospital:
-    </p>
+      ></div>
 
-    <div class="d-flex">
-      <div class="map_wrap" style="margin-left: 10rem; margin-bottom: auto">
-        <div
-          id="map"
-          style="
-            width: 500px;
-            height: 400px;
-            margin-left: 5rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            overflow: hidden;
-          "
-        ></div>
-
-        <div id="menu_wrap" class="bg_white">
-          <div class="option">
-            <div>
-              <form onsubmit="searchPlaces(); return false;">
-                키워드 :
-                <input
-                  type="text"
-                  value="율전동 병원"
-                  id="keyword"
-                  size="15"
-                />
-                <button type="submit">검색하기</button>
-              </form>
-            </div>
+      <div id="menu_wrap" class="bg_white">
+        <div class="option">
+          <div>
+            <form onsubmit="searchPlaces(); return false;">
+              키워드 :
+              <input
+                type="text"
+                value="율전동 병원"
+                id="keyword"
+                size="15"
+              />
+              <button type="submit">검색하기</button>
+            </form>
           </div>
-          <hr />
-          <ul id="placesList"></ul>
-          <div id="pagination"></div>
         </div>
+        <hr />
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
       </div>
     </div>
-    <script
-      type="text/javascript"
-      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3bfc51f1d5ff3836367d5351ec01d5a&libraries=services"
-    ></script>
   </div>
-</body> 
-
-
+  <script
+    type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3bfc51f1d5ff3836367d5351ec01d5a&libraries=services"
+  ></script>
+</div>
+</body>
 
 <script>
-
 // calculate total number of clicked buttons
 var sum = 0;
 
@@ -743,7 +749,7 @@ function update_diseasePart() {
       Disease.Name = "Hypertension"; // give information(name) for Disease
       Disease.Link = "https://en.wikipedia.org/wiki/Hypertension"; // give information(url) for Disease
       Disease.Solution =
-        "Maintaining normal weight, reducing salty food and drinking, and physical activity.";
+        "Maintaining normal weight, Reducing salty food and drinking, More physical activity";
       displayDisease(Disease); // use displayDisease function
       displaySolution(Disease);
     } else {
@@ -756,24 +762,36 @@ function update_diseasePart() {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Turtle neck syndrome";
       Disease.Link = "https://sebarun.com/en/info/page41.php";
+      Disease.Solution =
+        "Stretching often, Sleeping in the right position, Using computer monitor at the eye level";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_3 && statusA_4 && statusB_1 && statusD_1) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Chronic Fatigue Syndrome";
       Disease.Link =
         "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      Disease.Solution =
+        "Regular exercise, Plenty of sleep, Healthy eating, Controlling workload";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_1 && statusA_3 && statusA_4 && statusB_1) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Insomnia";
       Disease.Link = "https://en.wikipedia.org/wiki/Insomnia";
+      Disease.Solution =
+        "Sleep and Wake up at regular times, Avoid caffeine, Exercise regularly.";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_2 && statusA_3 && statusA_4 && statusB_1) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Depressive disorder";
       Disease.Link =
         "https://en.wikipedia.org/wiki/Mood_disorder#Depressive_disorders";
+      Disease.Solution =
+        "Consult a professional, Take the cure, Control stress, Exercise regularly.";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else {
       result.innerHTML =
         "Sorry, we cannot find such disease. Please report your disease to us :-)";
@@ -784,25 +802,36 @@ function update_diseasePart() {
         "Possible Disease (Click more sysmptoms for better prediction):  ";
       Disease.Name = "Turtle neck syndrome";
       Disease.Link = "https://sebarun.com/en/info/page41.php";
+      Disease.Solution =
+        "Stretching often, Sleeping in the right position, Using computer monitor at the eye level";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_3 && statusA_4 && statusB_1) {
       result.innerHTML =
         "Possible Disease (Click more sysmptoms for better prediction):  ";
       Disease.Name = "Chronic Fatigue Syndrome";
       Disease.Link =
         "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      Disease.Solution =
+        "Regular exercise, Plenty of sleep, Healthy eating, Controlling workload";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusD_2 && statusD_3 && statusD_4) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Herniation of intervertebral disk";
       Disease.Link =
         "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+      Disease.Solution =
+        "Straightening your back normally, Taking regular breaks, Exercising the waist continuously";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_5 && statusC_1 && statusC_2) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Carpal tunnel syndrome";
       Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+      Disease.Solution = "Periodic hand massage, Frequent finger exercise";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else {
       result.innerHTML =
         "Sorry, we cannot find such disease. Please report your disease to us :-)";
@@ -813,42 +842,62 @@ function update_diseasePart() {
         "Possible Disease (Click more sysmptoms for better prediction):  ";
       Disease.Name = "Turtle neck syndrome";
       Disease.Link = "https://sebarun.com/en/info/page41.php";
+      Disease.Solution =
+        "Stretching often, Sleeping in the right position, Using computer monitor at the eye level";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_3 && statusB_1) {
       result.innerHTML =
         "Possible Disease (Click more sysmptoms for better prediction):  ";
       Disease.Name = "Chronic Fatigue Syndrome";
       Disease.Link =
         "https://en.wikipedia.org/wiki/Chronic_fatigue_syndrome";
+      Disease.Solution =
+        "Regular exercise, Plenty of sleep, Healthy eating, Controlling workload";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusC_1 && statusC_2) {
       result.innerHTML =
         "Possible Disease (Click more sysmptoms for better prediction):  ";
       Disease.Name = "Carpal tunnel syndrome";
       Disease.Link = "https://en.wikipedia.org/wiki/Carpal_tunnel_syndrome";
+      Disease.Solution = "Periodic hand massage, Frequent finger exercise";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusD_2 && statusD_3) {
       result.innerHTML =
         "Possible Disease (Click more sysmptoms for better prediction):  ";
-      Disease.Name = "Herniation of intervertebral disk ";
+      Disease.Name = "Herniation of intervertebral disk";
       Disease.Link =
         "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095";
+      Disease.Solution =
+        "Straightening your back normally, Taking regular breaks, Exercising the waist continuously";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusB_4 && statusB_5) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Dry eye syndrome";
       Disease.Link = "https://en.wikipedia.org/wiki/Dry_eye_syndrome";
+      Disease.Solution =
+        "Frequent use of eye drops, Avoiding dry space, Getting enough sleep";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusA_2 && statusB_1) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Fatigue";
       Disease.Link = "https://en.wikipedia.org/wiki/Fatigue";
+      Disease.Solution =
+        "Regular exercise, Getting enough sleep, Increasing breaks";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusD_4 && statusD_5) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Spondylopathy";
       Disease.Link = "https://en.wikipedia.org/wiki/Spondylopathy";
+      Disease.Solution =
+        "Back muscle strengthening gymnastics, Biking, Climbing";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else {
       result.innerHTML =
         "Sorry, we cannot find such disease. Please report your disease to us :-)";
@@ -858,32 +907,49 @@ function update_diseasePart() {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Eating disorder";
       Disease.Link = "https://en.wikipedia.org/wiki/Eating_disorder";
+      Disease.Solution =
+        "Active exercise, Psychiatric counseling with professionals";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusC_5) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Shoulder Discomfort";
       Disease.Link = "https://en.wikipedia.org/wiki/Shoulder_problem";
+      Disease.Solution =
+        "Full body bathing, Frequent stretching, Massaging";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusB_4) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Eye Strain";
       Disease.Link = "https://en.wikipedia.org/wiki/Eye_strain";
+      Disease.Solution =
+        "Getting enough sleep, Eye massages, Frequent use of eye drops";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusD_2) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Low Back Pain";
       Disease.Link = "https://en.wikipedia.org/wiki/Low_back_pain";
+      Disease.Solution =
+        "Regular stretching, Aerobic exercise, Reducing excessive exercise";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusD_1) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Muscle Pain(Myalgia)";
       Disease.Link = "https://en.wikipedia.org/wiki/Myalgia";
+      Disease.Solution =
+        "Avoid excessive exercise, Enough stretching and warming up";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else if (statusC_2) {
       result.innerHTML = "Disease:  ";
       Disease.Name = "Wrist Pain";
       Disease.Link = "https://en.wikipedia.org/wiki/Wrist_pain";
+      Disease.Solution = "Periodic hand massage, Avoid excessive exercise";
       displayDisease(Disease);
+      displaySolution(Disease);
     } else {
       result.innerHTML =
         "Please check more symptoms for better prediction.";
@@ -1110,16 +1176,63 @@ function removeAllChildNods(el) {
     el.removeChild(el.lastChild);
   }
 }
+
 /*human body*/
-window.onload = function () {
-    const pieces = document.getElementsByTagName('svg');
-    for (var i = 0; pieces.length; i++) {
-        let _piece = pieces[i];
-        _piece.onclick = function(t) {
-            if (t.target.getAttribute('data-position') != null) document.getElementById('data').innerHTML = t.target.getAttribute('data-position');
-            if (t.target.parentElement.getAttribute('data-position') != null) document.getElementById('data').innerHTML = t.target.parentElement.getAttribute('data-position');
-        }
-    }
-}
+
+
+$(document).ready(function(){
+    $(".head").click(function(){
+      $("#collapseExample1").collapse('toggle');
+    });
+  })
+
+$(document).ready(function(){
+    $(".head").click(function(){
+      $("#collapseExample2").collapse('toggle');
+    });
+  })
+
+$(document).ready(function(){
+    $(".shoulder").click(function(){
+      $("#collapseExample3").collapse('toggle');
+    });
+  })
+
+$(document).ready(function(){
+    $(".arm").click(function(){
+      $("#collapseExample3").collapse('toggle');
+    });
+  })  
+
+$(document).ready(function(){
+    $(".hands").click(function(){
+      $("#collapseExample3").collapse('toggle');
+    });
+  })  
+  
+$(document).ready(function(){
+    $(".chest").click(function(){
+      $("#collapseExample3").collapse('toggle');
+    });
+  })    
+
+$(document).ready(function(){
+    $(".stomach").click(function(){
+      $("#collapseExample4").collapse('toggle');
+    });
+  })    
+
+$(document).ready(function(){
+    $(".legs").click(function(){
+      $("#collapseExample4").collapse('toggle');
+    });
+  })      
+
+
+
+
+
+ 
+
 </script>
 </html>
