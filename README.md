@@ -15,7 +15,7 @@ documentation(URL) related to the disease.
 that the application displaying.
 6. The website also has a feature that allows a user to search for hostpitals and displays the location on a map.
 
-![Screenshot](screenshot1.png)
+![Screenshot](screenshot1.PNG)
 
 
 
